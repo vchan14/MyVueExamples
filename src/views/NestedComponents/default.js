@@ -5,7 +5,6 @@ export const AppVue = `
 </template>
 
 <script setup>
-import { ref } from 'vue';
 import NestedComponent from './NestedComponent.vue'
 </script>
 

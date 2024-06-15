@@ -32,11 +32,15 @@ const router = createRouter({
       name: 'styling',
         component: () => import('../views/styling/StylingView.vue')
     },
-
     {
       path: '/nestedcomponents',
         name: 'nestedcomponents',
         component: () => import('../views/NestedComponents/NestedComponentsView.vue')
+    },
+    {
+      path: '/htmldirective',
+      name: 'htmldirective',
+        component: () => import('../views/htmldirective/HtmlDirectiveView.vue')
     }
   ]
 })
