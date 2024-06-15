@@ -1,9 +1,8 @@
 <script setup>
-import TheWelcome from '../components/TheWelcome.vue'
+import { Repl } from '@vue/repl'
+import CodeMirror from '@vue/repl/codemirror-editor'
 </script>
 
 <template>
-  <main>
-    <TheWelcome />
-  </main>
+  <Repl :editor="CodeMirror" />
 </template>

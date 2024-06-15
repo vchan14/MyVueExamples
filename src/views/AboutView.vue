@@ -1,15 +1,18 @@
-<template>
-  <div class="about">
-    <h1>This is an about page</h1>
-  </div>
-</template>
+<script setup>
+import { Repl } from '@vue/repl'
+import Monaco from '@vue/repl/monaco-editor'
+// import '@vue/repl/style.css'
+// ^ no longer needed after 3.0
+</script>
 
-<style>
-@media (min-width: 1024px) {
-  .about {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-  }
-}
-</style>
+<template>
+    <Repl
+        :editor="Monaco"
+        :preview-options="{
+        customCode: {
+          importCode: 'import { ref } from \'vue\'',
+          useCode: 'const count = ref(0)'
+        }
+      }"
+    />
+</template>
