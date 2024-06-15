@@ -25,7 +25,6 @@ store.setFiles({
 })
 
 
-
 </script>
 
 <template>
