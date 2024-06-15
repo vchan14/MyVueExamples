@@ -26,6 +26,11 @@ const router = createRouter({
       path: '/dynamicattributes',
       name: 'dynamicattributes',
       component: () => import('../views/dynamicattributes/DynamicAttributes.vue')
+    },
+    {
+      path: '/styling',
+      name: 'styling',
+        component: () => import('../views/styling/StylingView.vue')
     }
   ]
 })
