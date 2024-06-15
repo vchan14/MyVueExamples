@@ -1,5 +1,5 @@
 <script setup>
-import {AppVue} from "@/views/helloworld/default.js";
+import {AppVue} from "@/views/introduction/helloworld/default.js";
 import ReplWrapper from "@/components/ReplWrapper.vue";
 
 

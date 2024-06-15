@@ -20,27 +20,32 @@ const router = createRouter({
     {
       path: '/helloworld',
       name: 'helloworld',
-      component: () => import('../views/helloworld/HelloWorld.vue')
+      component: () => import('@/views/introduction/helloworld/HelloWorld.vue')
     },
     {
       path: '/dynamicattributes',
       name: 'dynamicattributes',
-      component: () => import('../views/dynamicattributes/DynamicAttributes.vue')
+      component: () => import('@/views/introduction/dynamicattributes/DynamicAttributes.vue')
     },
     {
       path: '/styling',
       name: 'styling',
-        component: () => import('../views/styling/StylingView.vue')
+        component: () => import('@/views/introduction/styling/StylingView.vue')
     },
     {
       path: '/nestedcomponents',
         name: 'nestedcomponents',
-        component: () => import('../views/NestedComponents/NestedComponentsView.vue')
+        component: () => import('@/views/introduction/NestedComponents/NestedComponentsView.vue')
     },
     {
       path: '/htmldirective',
       name: 'htmldirective',
-        component: () => import('../views/htmldirective/HtmlDirectiveView.vue')
+        component: () => import('@/views/introduction/htmldirective/HtmlDirectiveView.vue')
+    },
+    {
+      path: '/reactivityassignment',
+      name: 'reactivityassignment',
+      component: () => import('@/views/reactivity/ReactivityAssignmentView.vue')
     }
   ]
 })

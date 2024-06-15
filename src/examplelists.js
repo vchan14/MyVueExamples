@@ -21,3 +21,10 @@ export const introExamples = [
         path: '/htmldirective'
     }
 ]
+
+export const reactivityExamples = [
+    {
+        name: "Reactivity assignment",
+        path: "/reactivityassignment"
+    }
+]
