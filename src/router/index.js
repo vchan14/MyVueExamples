@@ -35,7 +35,7 @@ const router = createRouter({
     {
       path: '/nestedcomponents',
         name: 'nestedcomponents',
-        component: () => import('@/views/introduction/NestedComponents/NestedComponentsView.vue')
+        component: () => import('@/views/introduction/nestedcomponents/NestedComponentsView.vue')
     },
     {
       path: '/htmldirective',

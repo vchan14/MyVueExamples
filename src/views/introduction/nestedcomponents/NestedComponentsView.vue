@@ -1,7 +1,7 @@
 <script setup>
 
 import ReplWrapper from "@/components/ReplWrapper.vue";
-import {AppVue, NestedVue} from "@/views/introduction/NestedComponents/default.js";
+import {AppVue, NestedVue} from "@/views/introduction/nestedcomponents/default.js";
 </script>
 
 <template>
