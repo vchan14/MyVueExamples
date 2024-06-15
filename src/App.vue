@@ -1,41 +1,18 @@
 <script setup>
 import { RouterView } from 'vue-router'
+import RouterButton from "@/components/RouterButton.vue";
 
 </script>
 
 <template>
   <div class="flex flex-row gap-x-2 h-full w-full">
     <div class="flex flex-col w-36 p-2">
-      <button
-          class="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-2 border border-gray-400 rounded shadow"
-          @click="$router.push('/')"
-      >
-        Home
-      </button>
-      <button
-          class="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-2 border border-gray-400 rounded shadow"
-          @click="$router.push('/about')"
-      >
-        About
-      </button>
-      <button
-          class="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-2 border border-gray-400 rounded shadow"
-          @click="$router.push('/helloworld')"
-      >
-        Hello World
-      </button>
-      <button
-          class="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-2 border border-gray-400 rounded shadow"
-          @click="$router.push('/dynamicattributes')"
-      >
-        Dynamic Attributes
-      </button>
-      <button
-          class="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-2 border border-gray-400 rounded shadow"
-          @click="$router.push('/styling')"
-      >
-        Styling
-      </button>
+      <RouterButton to-path="/" name="Home"/>
+      <RouterButton to-path="/about" name="About"/>
+      <RouterButton to-path="/helloworld" name="Hello World"/>
+      <RouterButton to-path="/dynamicattributes" name="Dynamic Attributes"/>
+      <RouterButton to-path="/styling" name="Styling"/>
+      <RouterButton to-path="/nestedcomponents" name="Nested Component"/>
     </div>
     <div class="w-full">
       <RouterView />

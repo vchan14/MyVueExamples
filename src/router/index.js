@@ -31,6 +31,12 @@ const router = createRouter({
       path: '/styling',
       name: 'styling',
         component: () => import('../views/styling/StylingView.vue')
+    },
+
+    {
+      path: '/nestedcomponents',
+        name: 'nestedcomponents',
+        component: () => import('../views/NestedComponents/NestedComponentsView.vue')
     }
   ]
 })
