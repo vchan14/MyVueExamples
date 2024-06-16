@@ -1,5 +1,11 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
+import {
+  DynamicAttributesVue, HelloWorldVue,
+  HtmlDirectiveVue,
+  NestedComponentsVue, ReactivityAssignmentVue,
+  StylingVue
+} from "@/components/ReplFactory.js";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -20,32 +26,32 @@ const router = createRouter({
     {
       path: '/helloworld',
       name: 'helloworld',
-      component: () => import('@/views/introduction/helloworld/HelloWorld.vue')
+      component: () => HelloWorldVue
     },
     {
       path: '/dynamicattributes',
       name: 'dynamicattributes',
-      component: () => import('@/views/introduction/dynamicattributes/DynamicAttributes.vue')
+      component: () => DynamicAttributesVue
     },
     {
       path: '/styling',
       name: 'styling',
-        component: () => import('@/views/introduction/styling/StylingView.vue')
+        component: () => StylingVue
     },
     {
       path: '/nestedcomponents',
         name: 'nestedcomponents',
-        component: () => import('@/views/introduction/nestedcomponents/NestedComponentsView.vue')
+        component: () => NestedComponentsVue
     },
     {
       path: '/htmldirective',
       name: 'htmldirective',
-        component: () => import('@/views/introduction/htmldirective/HtmlDirectiveView.vue')
+        component: () => HtmlDirectiveVue
     },
     {
       path: '/reactivityassignment',
       name: 'reactivityassignment',
-      component: () => import('@/views/reactivity/ReactivityAssignmentView.vue')
+      component: () => ReactivityAssignmentVue
     }
   ]
 })

@@ -21,7 +21,6 @@ store.setFiles({
   ...store.getFiles(),
   'App.vue': props.codeString,
   ...props.files,
-
 })
 
 

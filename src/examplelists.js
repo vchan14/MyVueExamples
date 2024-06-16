@@ -24,7 +24,45 @@ export const introExamples = [
 
 export const reactivityExamples = [
     {
-        name: "Reactivity assignment",
+        name: "Reactivity Assignment",
         path: "/reactivityassignment"
+    },
+    {
+        name: "Reactive Declaration",
+        path: "/reactivedeclaration"
+    },
+    {
+        name: "Reactive Statements",
+        path: "/reactivestatements"
+    }
+]
+
+export const propExamples = [
+    {
+        name: "Declaring Props",
+        path: "/declaringprops"
+    },
+    {
+        name: "Default Values",
+        path: "/defaultvalues"
+    },
+    {
+        name: "Spread Props",
+        path: "/spreadprops"
+    }
+]
+
+export const logicExamples = [
+    {
+        name: "If Blocks",
+        path: "/ifblocks"
+    },
+    {
+        name: "Else Blocks",
+        path: "/elseblocks"
+    },
+    {
+        name: "Keyed Each Blocks",
+        path: "/keyedeachblocks"
     }
 ]
