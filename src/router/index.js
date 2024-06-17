@@ -3,9 +3,9 @@ import HomeView from '../views/HomeView.vue'
 import {
     DynamicAttributesVue, HelloWorldVue,
     HtmlDirectiveVue,
-    NestedComponentsVue, ReactivityAssignmentVue,
+    NestedComponentsVue, ReactivityAssignmentVue, ReactivityDeclarationVue, ReactivityStatementsVue,
     StylingVue
-} from "@/components/ReplFactory.js";
+} from "@/ReplFactory.js";
 
 const router = createRouter({
     history: createWebHistory(import.meta.env.BASE_URL),
@@ -23,6 +23,12 @@ const router = createRouter({
             // which is lazy-loaded when the route is visited.
             component: () => import('../views/AboutView.vue')
         },
+        {
+            path: '/test',
+            name: 'test',
+            component: () => import('../views/TestView.vue')
+        },
+
         {
             path: '/helloworld',
             name: 'helloworld',
@@ -52,6 +58,16 @@ const router = createRouter({
             path: '/reactivityassignment',
             name: 'reactivityassignment',
             component: ReactivityAssignmentVue
+        },
+        {
+            path: '/reactivedeclaration',
+            name: 'reactivedeclaration',
+            component: ReactivityDeclarationVue
+        },
+        {
+            path: '/reactivestatements',
+            name: 'reactivestatements',
+            component: ReactivityStatementsVue
         }
     ]
 })

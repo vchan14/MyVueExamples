@@ -9,6 +9,9 @@ import { AppVue as MainComponentVue, NestedVue as SubComponentVue } from '@/view
 import { AppVue as HtmlDirectiveAppVue } from '@/views/introduction/htmldirective/default.js'
 
 import { AppVue as ReactivityAssignmentAppVue } from '@/views/reactivity/reactivityassignment/default.js'
+import { AppVue as ReactivityDeclarationAppVue } from '@/views/reactivity/reactivitydeclaration/default.js'
+import { AppVue as ReactivityStatementsAppVue } from '@/views/reactivity/reactivestatements/default.js'
+import beCool from '@/views/reactivity/reactivestatements/ReactiveStatements.vue?raw'
 
 
 export function createReplComponent(codeString, files ={}) {
@@ -30,4 +33,7 @@ export const HtmlDirectiveVue = createReplComponent(HtmlDirectiveAppVue);
 
 // Reactivity
 export const ReactivityAssignmentVue = createReplComponent(ReactivityAssignmentAppVue);
+export const ReactivityDeclarationVue = createReplComponent(ReactivityDeclarationAppVue);
+export const ReactivityStatementsVue = createReplComponent(beCool);
+
 
