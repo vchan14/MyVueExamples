@@ -6,13 +6,13 @@ import Monaco from '@vue/repl/monaco-editor'
 </script>
 
 <template>
-    <Repl
-        :editor="Monaco"
-        :preview-options="{
-        customCode: {
-          importCode: 'import { ref } from \'vue\'',
-          useCode: 'const count = ref(0)'
-        }
-      }"
-    />
+  <Repl
+    :editor="Monaco"
+    :preview-options="{
+      customCode: {
+        importCode: 'import { ref } from \'vue\'',
+        useCode: 'const count = ref(0)'
+      }
+    }"
+  />
 </template>

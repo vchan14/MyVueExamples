@@ -4,5 +4,5 @@
 </template>
 
 <script setup>
-const htmlString = `hello <b>world</b>`;
+const htmlString = `hello <b>world</b>`
 </script>

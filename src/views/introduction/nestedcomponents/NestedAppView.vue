@@ -1,6 +1,6 @@
 <template>
   <p>...don't affect this element</p>
-  <NestedComponent/>
+  <NestedComponent />
 </template>
 
 <script setup>

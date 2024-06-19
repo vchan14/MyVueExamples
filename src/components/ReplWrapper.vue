@@ -6,29 +6,23 @@ import CodeMirror from '@vue/repl/codemirror-editor'
 const props = defineProps({
   codeString: {
     type: String,
-    required: true,
+    required: true
   },
   files: {
     type: Object,
-    default: () => ({}),
-  },
+    default: () => ({})
+  }
 })
-
 
 const store = new useStore({})
 
 store.setFiles({
   ...store.getFiles(),
   'App.vue': props.codeString,
-  ...props.files,
+  ...props.files
 })
-
-
 </script>
 
 <template>
-  <Repl
-      :editor="CodeMirror"
-      :store="store"
-  />
+  <Repl :editor="CodeMirror" :store="store" />
 </template>
