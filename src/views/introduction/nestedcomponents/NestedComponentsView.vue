@@ -1,19 +1,10 @@
-<script setup>
-
-import ReplWrapper from "@/components/ReplWrapper.vue";
-import {AppVue, NestedVue} from "@/views/introduction/nestedcomponents/default.js";
-</script>
-
 <template>
-  <ReplWrapper
-      :code-string="AppVue"
-      :files="{
-        'NestedComponent.vue': NestedVue,
-      }"
-  />
-
+  <p>Styled!</p>
 </template>
-
 <style scoped>
-
-</style>
+p {
+  color: purple;
+  font-family: 'Comic Sans MS', cursive;
+  font-size: 2em;
+}
+</style >

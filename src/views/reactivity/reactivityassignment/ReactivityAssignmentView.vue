@@ -1,9 +1,13 @@
-<script setup>
-
-import ReplWrapper from "@/components/ReplWrapper.vue";
-import {AppVue} from "./default.js";
-</script>
-
 <template>
-  <ReplWrapper :code-string="AppVue"/>
+  <button @click="handleClick">
+    Clicked {{count}} {{count === 0 ? 'time' : 'times'}}
+  </button>
 </template>
+
+<script setup>
+import { ref } from 'vue';
+const count = ref(0);
+const handleClick = () => {
+  count.value++;
+}
+</script>

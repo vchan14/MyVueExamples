@@ -2,16 +2,16 @@
 import { defineComponent, h } from 'vue'
 import ReplWrapper from '@/components/ReplWrapper.vue' // Adjust the path accordingly
 
-import { AppVue as HelloAppVue } from '@/views/introduction/helloworld/default.js'
-import { AppVue as DynamicAttributesAppVue } from '@/views/introduction/dynamicattributes/default.js'
-import { AppVue as StylingAppVue } from '@/views/introduction/styling/default.js'
-import { AppVue as MainComponentVue, NestedVue as SubComponentVue } from '@/views/introduction/nestedcomponents/default.js'
-import { AppVue as HtmlDirectiveAppVue } from '@/views/introduction/htmldirective/default.js'
+import HelloAppVue from '@/views/introduction/helloworld/HelloWorldView.vue?raw';
+import DynamicAttributesAppVue from '@/views/introduction/dynamicattributes/DynamicAttributesView.vue?raw';
+import StylingAppVue from '@/views/introduction/styling/StylingView.vue?raw';
+import MainComponentVue from '@/views/introduction/nestedcomponents/NestedAppView.vue?raw';
+import SubComponentVue from '@/views/introduction/nestedcomponents/NestedComponentsView.vue?raw';
+import HtmlDirectiveAppVue from '@/views/introduction/htmldirective/HtmlDirectiveView.vue?raw';
 
-import { AppVue as ReactivityAssignmentAppVue } from '@/views/reactivity/reactivityassignment/default.js'
-import { AppVue as ReactivityDeclarationAppVue } from '@/views/reactivity/reactivitydeclaration/default.js'
-import { AppVue as ReactivityStatementsAppVue } from '@/views/reactivity/reactivestatements/default.js'
-import beCool from '@/views/reactivity/reactivestatements/ReactiveStatements.vue?raw'
+import ReactivityAssignmentView from '@/views/reactivity/reactivityassignment/ReactivityAssignmentView.vue?raw'
+import ReactivityDeclarationView from '@/views/reactivity/reactivitydeclaration/ReactiveDeclarationView.vue?raw'
+import ReactivityStatementsView from '@/views/reactivity/reactivestatements/ReactiveStatementsView.vue?raw'
 
 
 export function createReplComponent(codeString, files ={}) {
@@ -32,8 +32,8 @@ export const NestedComponentsVue = createReplComponent(MainComponentVue, {
 export const HtmlDirectiveVue = createReplComponent(HtmlDirectiveAppVue);
 
 // Reactivity
-export const ReactivityAssignmentVue = createReplComponent(ReactivityAssignmentAppVue);
-export const ReactivityDeclarationVue = createReplComponent(ReactivityDeclarationAppVue);
-export const ReactivityStatementsVue = createReplComponent(beCool);
+export const ReactivityAssignmentVue = createReplComponent(ReactivityAssignmentView);
+export const ReactivityDeclarationVue = createReplComponent(ReactivityDeclarationView);
+export const ReactivityStatementsVue = createReplComponent(ReactivityStatementsView);
 
 

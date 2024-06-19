@@ -1,8 +1,8 @@
-<script setup>
-import ReplWrapper from "@/components/ReplWrapper.vue";
-import {AppVue} from "@/views/introduction/htmldirective/default.js";
-</script>
-
+<!-- Dynamically rendering arbitrary HTML on your website can be very dangerous because it can easily lead to XSS attacks. Only use v-html on trusted content and never on user-provided content. -->
 <template>
-  <ReplWrapper :code-string="AppVue"/>
+  <p v-html="htmlString"></p>
 </template>
+
+<script setup>
+const htmlString = `hello <b>world</b>`;
+</script>

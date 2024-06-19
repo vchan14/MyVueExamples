@@ -1,68 +1,68 @@
 
-export const introExamples = [
-    {
-        name: "Hello World",
-        path: "/helloworld"
-    },
-    {
-        name: "Dynamic Attributes",
-        path: '/dynamicattributes',
-    },
-    {
-        name: "Styling",
-        path: '/styling'
-    },
-    {
-        name: "Nested Component",
-        path: '/nestedcomponents'
-    },
-    {
-        name: "HTML Directive",
-        path: '/htmldirective'
-    }
-]
+const introExamples = {
+    name: "Introduction",
+    examples: [
+        {
+            name: "Hello World",
+            path: "/helloworld"
+        },
+        {
+            name: "Dynamic Attributes",
+            path: '/dynamicattributes',
+        },
+        {
+            name: "Styling",
+            path: '/styling'
+        },
+        {
+            name: "Nested Component",
+            path: '/nestedcomponents'
+        },
+        {
+            name: "HTML Directive",
+            path: '/htmldirective'
+        }
+    ]
+}
 
-export const reactivityExamples = [
-    {
-        name: "Reactivity Assignment",
-        path: "/reactivityassignment"
-    },
-    {
-        name: "Reactive Declaration",
-        path: "/reactivedeclaration"
-    },
-    {
-        name: "Reactive Statements",
-        path: "/reactivestatements"
-    }
-]
+const reactivityExamples = {
+    name: "Reactivity",
+    examples: [
+        {
+            name: "Reactivity Assignment",
+            path: "/reactivityassignment"
+        },
+        {
+            name: "Reactive Declaration",
+            path: "/reactivedeclaration"
+        },
+        {
+            name: "Reactive Statements",
+            path: "/reactivestatements"
+        }
+    ]
+}
 
-export const propExamples = [
-    {
-        name: "Declaring Props",
-        path: "/declaringprops"
-    },
-    {
-        name: "Default Values",
-        path: "/defaultvalues"
-    },
-    {
-        name: "Spread Props",
-        path: "/spreadprops"
-    }
-]
+const propExamples = {
+    name: "Props",
+    examples: [
+        {
+            name: "If Blocks",
+            path: "/ifblocks"
+        },
+        {
+            name: "Else Blocks",
+            path: "/elseblocks"
+        },
+        {
+            name: "Keyed Each Blocks",
+            path: "/keyedeachblocks"
+        }
+    ]
+}
 
-export const logicExamples = [
-    {
-        name: "If Blocks",
-        path: "/ifblocks"
-    },
-    {
-        name: "Else Blocks",
-        path: "/elseblocks"
-    },
-    {
-        name: "Keyed Each Blocks",
-        path: "/keyedeachblocks"
-    }
+export const ALL_EXAMPLES = [
+    introExamples,
+    reactivityExamples,
+    propExamples
 ]
