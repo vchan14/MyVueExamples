@@ -3,7 +3,7 @@
 </template>
 
 <script setup>
-import NestedView from '@/views/NestedView.vue'
+import NestedView from './InfoView.vue'
 const pkg = {
   name: 'svelte',
   version: 3,

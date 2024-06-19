@@ -46,6 +46,24 @@ const propExamples = {
   name: 'Props',
   examples: [
     {
+      name: 'Declaring Props',
+      path: '/declaringprops'
+    },
+    {
+      name: 'Default Values',
+      path: '/defaultvalues'
+    },
+    {
+      name: 'Spread Props',
+      path: '/spreadprops'
+    }
+  ]
+}
+
+const logicExamples = {
+  name: 'Logic',
+  examples: [
+    {
       name: 'If Blocks',
       path: '/ifblocks'
     },
@@ -54,10 +72,22 @@ const propExamples = {
       path: '/elseblocks'
     },
     {
+      name: 'Else If Blocks',
+      path: '/elseifblocks'
+    },
+    {
+      name: 'Each Blocks',
+      path: '/eachblocks'
+    },
+    {
       name: 'Keyed Each Blocks',
       path: '/keyedeachblocks'
+    },
+    {
+      name: 'Await Blocks',
+      path: '/awaitblocks'
     }
   ]
 }
 
-export const ALL_EXAMPLES = [introExamples, reactivityExamples, propExamples]
+export const ALL_EXAMPLES = [introExamples, reactivityExamples, propExamples, logicExamples]

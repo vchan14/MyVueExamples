@@ -6,7 +6,7 @@ import { ALL_EXAMPLES } from '@/examplelists.js'
 
 <template>
   <div class="flex flex-row gap-x-2 h-full w-full">
-    <div class="flex flex-col gap-y-4 w-56 p-2 bg-green-200 rounded">
+    <div class="flex flex-col gap-y-4 w-56 p-2 bg-green-200 rounded overflow-y-auto">
       <p class="text-2xl">Vue 3 Examples</p>
       <div v-for="{ name, examples } in ALL_EXAMPLES" :key="name" class="flex flex-col gap-y-2">
         <p class="text-xl">{{ name }}</p>

@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import HomeView from '../views/HomeView.vue'
 import {
+  DeclaringPropsVue,
+  DefaultValuesVue,
   DynamicAttributesVue,
   HelloWorldVue,
   HtmlDirectiveVue,
@@ -8,6 +9,7 @@ import {
   ReactivityAssignmentVue,
   ReactivityDeclarationVue,
   ReactivityStatementsVue,
+  SpreadPropsVue,
   StylingVue
 } from '@/ReplFactory.js'
 
@@ -17,22 +19,13 @@ const router = createRouter({
     {
       path: '/',
       name: 'home',
-      component: HomeView
-    },
-    {
-      path: '/about',
-      name: 'about',
-      // route level code-splitting
-      // this generates a separate chunk (About.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: () => import('../views/AboutView.vue')
+      component: HelloWorldVue
     },
     {
       path: '/test',
       name: 'test',
       component: () => import('../views/TestView.vue')
     },
-
     {
       path: '/helloworld',
       name: 'helloworld',
@@ -72,6 +65,21 @@ const router = createRouter({
       path: '/reactivestatements',
       name: 'reactivestatements',
       component: ReactivityStatementsVue
+    },
+    {
+      path: '/declaringprops',
+      name: 'declaringprops',
+      component: DeclaringPropsVue
+    },
+    {
+      path: '/defaultvalues',
+      name: 'defaultvalues',
+      component: DefaultValuesVue
+    },
+    {
+      path: '/spreadprops',
+      name: 'spreadprops',
+      component: SpreadPropsVue
     }
   ]
 })
