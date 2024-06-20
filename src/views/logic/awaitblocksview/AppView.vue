@@ -9,7 +9,7 @@
 
 <script setup>
 import {ref} from "vue";
-import {generateRandomNumberAsync} from "@/views/logic/awaitblocksview/utils.js";
+import {generateRandomNumberAsync} from "./utils.js";
 
 let number = ref(null);
 let error = ref(null);

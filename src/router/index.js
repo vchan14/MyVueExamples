@@ -1,10 +1,11 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import {
+  AwaitBlocksVue,
   DeclaringPropsVue,
   DefaultValuesVue,
-  DynamicAttributesVue,
+  DynamicAttributesVue, EachBlocksVue, ElseBlocksVue, ElseIfBlocksVue,
   HelloWorldVue,
-  HtmlDirectiveVue,
+  HtmlDirectiveVue, IfBlocksVue, KeyedEachBlocksVue,
   NestedComponentsVue,
   ReactivityAssignmentVue,
   ReactivityDeclarationVue,
@@ -12,6 +13,9 @@ import {
   SpreadPropsVue,
   StylingVue
 } from '@/ReplFactory.js'
+import IfBlocksView from "@/views/logic/IfBlocksView.vue";
+import ElseBlocksView from "@/views/logic/ElseBlocksView.vue";
+import EachBlocksView from "@/views/logic/EachBlocksView.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -80,6 +84,36 @@ const router = createRouter({
       path: '/spreadprops',
       name: 'spreadprops',
       component: SpreadPropsVue
+    },
+    {
+      path: '/ifblocks',
+      name: 'ifblocks',
+      component: IfBlocksVue
+    },
+    {
+      path: '/elseifblocks',
+      name: 'elseifblocks',
+      component: ElseIfBlocksVue
+    },
+    {
+      path: '/elseblocks',
+      name: 'elseblocks',
+      component: ElseBlocksVue
+    },
+    {
+      path: '/eachblocks',
+      name: 'eachblocks',
+      component: EachBlocksVue
+    },
+    {
+      path: '/keyedeachblocks',
+      name: 'keyedeachblocks',
+      component: KeyedEachBlocksVue
+    },
+    {
+      path: '/awaitblocks',
+      name: 'awaitblocks',
+      component: AwaitBlocksVue
     }
   ]
 })
