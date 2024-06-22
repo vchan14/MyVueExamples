@@ -6,7 +6,7 @@
 defineProps({
   answer: {
     type: String,
-    default: 'a mystery'
-  }
-})
+    default: "a mystery",
+  },
+});
 </script>

@@ -4,9 +4,9 @@
 </template>
 
 <script setup>
-import ParentView from './ParentView.vue'
+import ParentView from "./ParentView.vue";
 
 function handleMessage(message) {
-  alert(message.text)
+  alert(message.text);
 }
 </script>

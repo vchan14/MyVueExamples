@@ -1,4 +1,4 @@
-import { createRouter, createWebHistory } from 'vue-router'
+import { createRouter, createWebHistory } from "vue-router";
 import {
   AwaitBlocksVue,
   ComponentEventsVue,
@@ -22,138 +22,138 @@ import {
   ReactivityDeclarationVue,
   ReactivityStatementsVue,
   SpreadPropsVue,
-  StylingVue
-} from '@/ReplFactory.js'
+  StylingVue,
+} from "@/ReplFactory.js";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {
-      path: '/',
-      name: 'home',
-      component: HelloWorldVue
+      path: "/",
+      name: "home",
+      component: HelloWorldVue,
     },
     {
-      path: '/test',
-      name: 'test',
-      component: () => import('../views/TestView.vue')
+      path: "/test",
+      name: "test",
+      component: () => import("../views/TestView.vue"),
     },
     {
-      path: '/helloworld',
-      name: 'helloworld',
-      component: HelloWorldVue
+      path: "/helloworld",
+      name: "helloworld",
+      component: HelloWorldVue,
     },
     {
-      path: '/dynamicattributes',
-      name: 'dynamicattributes',
-      component: DynamicAttributesVue
+      path: "/dynamicattributes",
+      name: "dynamicattributes",
+      component: DynamicAttributesVue,
     },
     {
-      path: '/styling',
-      name: 'styling',
-      component: StylingVue
+      path: "/styling",
+      name: "styling",
+      component: StylingVue,
     },
     {
-      path: '/nestedcomponents',
-      name: 'nestedcomponents',
-      component: NestedComponentsVue
+      path: "/nestedcomponents",
+      name: "nestedcomponents",
+      component: NestedComponentsVue,
     },
     {
-      path: '/htmldirective',
-      name: 'htmldirective',
-      component: HtmlDirectiveVue
+      path: "/htmldirective",
+      name: "htmldirective",
+      component: HtmlDirectiveVue,
     },
     {
-      path: '/reactivityassignment',
-      name: 'reactivityassignment',
-      component: ReactivityAssignmentVue
+      path: "/reactivityassignment",
+      name: "reactivityassignment",
+      component: ReactivityAssignmentVue,
     },
     {
-      path: '/reactivedeclaration',
-      name: 'reactivedeclaration',
-      component: ReactivityDeclarationVue
+      path: "/reactivedeclaration",
+      name: "reactivedeclaration",
+      component: ReactivityDeclarationVue,
     },
     {
-      path: '/reactivestatements',
-      name: 'reactivestatements',
-      component: ReactivityStatementsVue
+      path: "/reactivestatements",
+      name: "reactivestatements",
+      component: ReactivityStatementsVue,
     },
     {
-      path: '/declaringprops',
-      name: 'declaringprops',
-      component: DeclaringPropsVue
+      path: "/declaringprops",
+      name: "declaringprops",
+      component: DeclaringPropsVue,
     },
     {
-      path: '/defaultvalues',
-      name: 'defaultvalues',
-      component: DefaultValuesVue
+      path: "/defaultvalues",
+      name: "defaultvalues",
+      component: DefaultValuesVue,
     },
     {
-      path: '/spreadprops',
-      name: 'spreadprops',
-      component: SpreadPropsVue
+      path: "/spreadprops",
+      name: "spreadprops",
+      component: SpreadPropsVue,
     },
     {
-      path: '/ifblocks',
-      name: 'ifblocks',
-      component: IfBlocksVue
+      path: "/ifblocks",
+      name: "ifblocks",
+      component: IfBlocksVue,
     },
     {
-      path: '/elseifblocks',
-      name: 'elseifblocks',
-      component: ElseIfBlocksVue
+      path: "/elseifblocks",
+      name: "elseifblocks",
+      component: ElseIfBlocksVue,
     },
     {
-      path: '/elseblocks',
-      name: 'elseblocks',
-      component: ElseBlocksVue
+      path: "/elseblocks",
+      name: "elseblocks",
+      component: ElseBlocksVue,
     },
     {
-      path: '/eachblocks',
-      name: 'eachblocks',
-      component: EachBlocksVue
+      path: "/eachblocks",
+      name: "eachblocks",
+      component: EachBlocksVue,
     },
     {
-      path: '/keyedeachblocks',
-      name: 'keyedeachblocks',
-      component: KeyedEachBlocksVue
+      path: "/keyedeachblocks",
+      name: "keyedeachblocks",
+      component: KeyedEachBlocksVue,
     },
     {
-      path: '/awaitblocks',
-      name: 'awaitblocks',
-      component: AwaitBlocksVue
+      path: "/awaitblocks",
+      name: "awaitblocks",
+      component: AwaitBlocksVue,
     },
     {
-      path: '/domevents',
-      name: 'domevents',
-      component: DomEventViewVue
+      path: "/domevents",
+      name: "domevents",
+      component: DomEventViewVue,
     },
     {
-      path: '/inlinehandlers',
-      name: 'inlinehandlers',
-      component: InlineHandlersVue
+      path: "/inlinehandlers",
+      name: "inlinehandlers",
+      component: InlineHandlersVue,
     },
     {
-      path: '/eventmodifiers',
-      name: 'eventmodifiers',
-      component: EventModifiersVue
+      path: "/eventmodifiers",
+      name: "eventmodifiers",
+      component: EventModifiersVue,
     },
     {
-      path: '/componentevents',
-      name: 'componentevents',
-      component: ComponentEventsVue
+      path: "/componentevents",
+      name: "componentevents",
+      component: ComponentEventsVue,
     },
     {
-      path: '/eventforwarding',
-      name: 'eventforwarding',
-      component: EventForwardingVue
+      path: "/eventforwarding",
+      name: "eventforwarding",
+      component: EventForwardingVue,
     },
     {
-      path: '/domeventforwarding',
-      name: 'domeventforwarding',
-      component: DomEventForwardingVue
-    }
-  ]
-})
+      path: "/domeventforwarding",
+      name: "domeventforwarding",
+      component: DomEventForwardingVue,
+    },
+  ],
+});
 
-export default router
+export default router;

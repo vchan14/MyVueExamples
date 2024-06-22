@@ -1,17 +1,17 @@
 <script setup>
-import { ref } from 'vue'
-import ThingView from './ThingView.vue'
+import { ref } from "vue";
+import ThingView from "./ThingView.vue";
 
 const things = ref([
-  { id: 1, color: 'darkblue' },
-  { id: 2, color: 'indigo' },
-  { id: 3, color: 'deeppink' },
-  { id: 4, color: 'salmon' },
-  { id: 5, color: 'gold' }
-])
+  { id: 1, color: "darkblue" },
+  { id: 2, color: "indigo" },
+  { id: 3, color: "deeppink" },
+  { id: 4, color: "salmon" },
+  { id: 5, color: "gold" },
+]);
 
 function handleClick() {
-  things.value = things.value.slice(1)
+  things.value = things.value.slice(1);
 }
 </script>
 

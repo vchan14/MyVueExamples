@@ -4,9 +4,9 @@
 </template>
 
 <script setup>
-import InnerView from './InnerView.vue'
+import InnerView from "./InnerView.vue";
 
 function handleMessage(message) {
-  alert(message.text)
+  alert(message.text);
 }
 </script>

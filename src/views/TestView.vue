@@ -3,9 +3,9 @@
 </template>
 
 <script setup>
-import InnerView from './InnerView.vue'
+import InnerView from "./InnerView.vue";
 
 function handleClick() {
-  alert('Clicked')
+  alert("Clicked");
 }
 </script>

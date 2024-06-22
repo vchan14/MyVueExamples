@@ -1,27 +1,27 @@
 <script setup>
-import { defineProps, computed } from 'vue'
-import { useRoute } from 'vue-router'
+import { defineProps, computed } from "vue";
+import { useRoute } from "vue-router";
 
 const props = defineProps({
   toPath: {
     type: String,
-    required: true
+    required: true,
   },
   name: {
     type: String,
-    default: '/'
-  }
-})
+    default: "/",
+  },
+});
 
-const route = useRoute()
-const isSelected = computed(() => route.path === props.toPath)
+const route = useRoute();
+const isSelected = computed(() => route.path === props.toPath);
 </script>
 
 <template>
   <button
     :class="{
       selected: isSelected,
-      'bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-2 border border-gray-400 rounded shadow': true
+      'rounded border border-gray-400 bg-white px-2 py-2 font-semibold text-gray-800 shadow hover:bg-gray-100': true,
     }"
     @click="$router.push(props.toPath)"
   >

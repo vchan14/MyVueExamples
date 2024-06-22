@@ -1,13 +1,13 @@
 <script setup>
-import { computed } from 'vue'
+import { computed } from "vue";
 
 // Define the `current` prop
 const props = defineProps({
-  current: String
-})
+  current: String,
+});
 
 // Compute the `initial` value upon initialization
-const initial = computed(() => props.current)
+const initial = computed(() => props.current);
 </script>
 
 <template>

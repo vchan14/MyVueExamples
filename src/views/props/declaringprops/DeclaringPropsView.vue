@@ -3,5 +3,5 @@
 </template>
 
 <script setup>
-import NestedView from './NestedView.vue'
+import NestedView from "./NestedView.vue";
 </script>

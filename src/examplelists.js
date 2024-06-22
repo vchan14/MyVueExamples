@@ -1,128 +1,128 @@
 const introExamples = {
-  name: 'Introduction',
+  name: "Introduction",
   examples: [
     {
-      name: 'Hello World',
-      path: '/helloworld'
+      name: "Hello World",
+      path: "/helloworld",
     },
     {
-      name: 'Dynamic Attributes',
-      path: '/dynamicattributes'
+      name: "Dynamic Attributes",
+      path: "/dynamicattributes",
     },
     {
-      name: 'Styling',
-      path: '/styling'
+      name: "Styling",
+      path: "/styling",
     },
     {
-      name: 'Nested Component',
-      path: '/nestedcomponents'
+      name: "Nested Component",
+      path: "/nestedcomponents",
     },
     {
-      name: 'HTML Directive',
-      path: '/htmldirective'
-    }
-  ]
-}
+      name: "HTML Directive",
+      path: "/htmldirective",
+    },
+  ],
+};
 
 const reactivityExamples = {
-  name: 'Reactivity',
+  name: "Reactivity",
   examples: [
     {
-      name: 'Reactivity Assignment',
-      path: '/reactivityassignment'
+      name: "Reactivity Assignment",
+      path: "/reactivityassignment",
     },
     {
-      name: 'Reactive Declaration',
-      path: '/reactivedeclaration'
+      name: "Reactive Declaration",
+      path: "/reactivedeclaration",
     },
     {
-      name: 'Reactive Statements',
-      path: '/reactivestatements'
-    }
-  ]
-}
+      name: "Reactive Statements",
+      path: "/reactivestatements",
+    },
+  ],
+};
 
 const propExamples = {
-  name: 'Props',
+  name: "Props",
   examples: [
     {
-      name: 'Declaring Props',
-      path: '/declaringprops'
+      name: "Declaring Props",
+      path: "/declaringprops",
     },
     {
-      name: 'Default Values',
-      path: '/defaultvalues'
+      name: "Default Values",
+      path: "/defaultvalues",
     },
     {
-      name: 'Spread Props',
-      path: '/spreadprops'
-    }
-  ]
-}
+      name: "Spread Props",
+      path: "/spreadprops",
+    },
+  ],
+};
 
 const logicExamples = {
-  name: 'Logic',
+  name: "Logic",
   examples: [
     {
-      name: 'If Blocks',
-      path: '/ifblocks'
+      name: "If Blocks",
+      path: "/ifblocks",
     },
     {
-      name: 'Else Blocks',
-      path: '/elseblocks'
+      name: "Else Blocks",
+      path: "/elseblocks",
     },
     {
-      name: 'Else If Blocks',
-      path: '/elseifblocks'
+      name: "Else If Blocks",
+      path: "/elseifblocks",
     },
     {
-      name: 'Each Blocks',
-      path: '/eachblocks'
+      name: "Each Blocks",
+      path: "/eachblocks",
     },
     {
-      name: 'Keyed Each Blocks',
-      path: '/keyedeachblocks'
+      name: "Keyed Each Blocks",
+      path: "/keyedeachblocks",
     },
     {
-      name: 'Await Blocks',
-      path: '/awaitblocks'
-    }
-  ]
-}
+      name: "Await Blocks",
+      path: "/awaitblocks",
+    },
+  ],
+};
 
 const eventsExamples = {
-  name: 'Events',
+  name: "Events",
   examples: [
     {
-      name: 'Dom Events',
-      path: '/domevents'
+      name: "Dom Events",
+      path: "/domevents",
     },
     {
-      name: 'Inline Handlers',
-      path: '/inlinehandlers'
+      name: "Inline Handlers",
+      path: "/inlinehandlers",
     },
     {
-      name: 'Event Modifiers',
-      path: '/eventmodifiers'
+      name: "Event Modifiers",
+      path: "/eventmodifiers",
     },
     {
-      name: 'Component Events',
-      path: '/componentevents'
+      name: "Component Events",
+      path: "/componentevents",
     },
     {
-      name: 'Event Forwarding',
-      path: '/eventforwarding'
+      name: "Event Forwarding",
+      path: "/eventforwarding",
     },
     {
-      name: 'Dom Event Forwarding',
-      path: '/domeventforwarding'
-    }
-  ]
-}
+      name: "Dom Event Forwarding",
+      path: "/domeventforwarding",
+    },
+  ],
+};
 export const ALL_EXAMPLES = [
   introExamples,
   reactivityExamples,
   propExamples,
   logicExamples,
-  eventsExamples
-]
+  eventsExamples,
+];

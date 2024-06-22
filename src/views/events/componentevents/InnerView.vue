@@ -3,11 +3,11 @@
 </template>
 
 <script setup>
-const emit = defineEmits(['message'])
+const emit = defineEmits(["message"]);
 
 function sayHello() {
-  emit('message', {
-    text: 'Hello!'
-  })
+  emit("message", {
+    text: "Hello!",
+  });
 }
 </script>

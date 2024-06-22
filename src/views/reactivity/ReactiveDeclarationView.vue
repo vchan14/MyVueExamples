@@ -9,14 +9,14 @@
 </template>
 
 <script setup>
-import { ref, computed } from 'vue'
+import { ref, computed } from "vue";
 
-let count = ref(1)
+let count = ref(1);
 
 const handleCount = () => {
-  count.value++
-}
+  count.value++;
+};
 
-let doubled = computed(() => count.value * 2)
-let quadrupled = computed(() => doubled.value * 2)
+let doubled = computed(() => count.value * 2);
+let quadrupled = computed(() => doubled.value * 2);
 </script>

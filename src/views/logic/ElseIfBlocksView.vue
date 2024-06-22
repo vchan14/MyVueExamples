@@ -7,5 +7,5 @@
 </template>
 
 <script setup>
-let x = 1
+let x = 1;
 </script>

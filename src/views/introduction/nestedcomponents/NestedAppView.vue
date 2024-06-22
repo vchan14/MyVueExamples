@@ -4,5 +4,5 @@
 </template>
 
 <script setup>
-import NestedComponent from './NestedComponent.vue'
+import NestedComponent from "./NestedComponent.vue";
 </script>

@@ -8,20 +8,20 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'
-import { generateRandomNumberAsync } from './utils.js'
+import { ref } from "vue";
+import { generateRandomNumberAsync } from "./utils.js";
 
-let number = ref(null)
-let error = ref(null)
+let number = ref(null);
+let error = ref(null);
 
 const handleClick = async () => {
-  number.value = null
-  error.value = null
+  number.value = null;
+  error.value = null;
   try {
-    number.value = await generateRandomNumberAsync()
+    number.value = await generateRandomNumberAsync();
   } catch (e) {
-    error.value = 'An error occurred' + e
+    error.value = "An error occurred" + e;
   }
-}
-handleClick()
+};
+handleClick();
 </script>

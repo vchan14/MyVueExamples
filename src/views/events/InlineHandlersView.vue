@@ -1,14 +1,16 @@
 <template>
-  <div @mousemove="handleMousemove">The mouse position is {{ m.x }} x {{ m.y }}</div>
+  <div @mousemove="handleMousemove">
+    The mouse position is {{ m.x }} x {{ m.y }}
+  </div>
 </template>
 
 <script setup>
-import { ref } from 'vue'
+import { ref } from "vue";
 
-let m = ref({ x: 0, y: 0 })
+let m = ref({ x: 0, y: 0 });
 
 function handleMousemove(event) {
-  m.value = { x: event.clientX, y: event.clientY }
+  m.value = { x: event.clientX, y: event.clientY };
 }
 </script>
 

@@ -1,26 +1,26 @@
 <script setup>
-import { Repl, useStore } from '@vue/repl'
-import CodeMirror from '@vue/repl/codemirror-editor'
+import { Repl, useStore } from "@vue/repl";
+import CodeMirror from "@vue/repl/codemirror-editor";
 
 // require a prop called codeString
 const props = defineProps({
   codeString: {
     type: String,
-    required: true
+    required: true,
   },
   files: {
     type: Object,
-    default: () => ({})
-  }
-})
+    default: () => ({}),
+  },
+});
 
-const store = new useStore({})
+const store = new useStore({});
 
 store.setFiles({
   ...store.getFiles(),
-  'App.vue': props.codeString,
-  ...props.files
-})
+  "App.vue": props.codeString,
+  ...props.files,
+});
 </script>
 
 <template>

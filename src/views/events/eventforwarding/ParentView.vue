@@ -3,9 +3,9 @@
 </template>
 
 <script setup>
-import ChildView from './ChildView.vue'
-const emit = defineEmits(['message'])
+import ChildView from "./ChildView.vue";
+const emit = defineEmits(["message"]);
 function handleMessage(message) {
-  emit('message', message)
+  emit("message", message);
 }
 </script>
