@@ -22,8 +22,6 @@ store.setFiles({
   ...props.files,
 })
 
-store.
-
 </script>
 
 <template>

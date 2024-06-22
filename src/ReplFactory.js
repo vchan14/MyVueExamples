@@ -28,6 +28,7 @@ import SpreadPropsNestedVue from '@/views/props/spreadprops/InfoView.vue?raw'
 
 // Logic
 import AwaitBlocksAppVue from '@/views/logic/awaitblocksview/AppView.vue?raw';
+import AwaitBlocksSupportVue from '@/views/logic/awaitblocksview/utils.js?raw';
 import KeyedEachBlocksAppVue from '@/views/logic/keyedeachblocks/AppView.vue?raw';
 import KeyedEachBlocksSupportVue from '@/views/logic/keyedeachblocks/ThingView.vue?raw';
 import EachBlocksAppVue from '@/views/logic/EachBlocksView.vue?raw';
@@ -69,7 +70,9 @@ export const SpreadPropsVue = createReplComponent(SpreadPropsAppVue, {
 })
 
 // Logic
-export const AwaitBlocksVue = createReplComponent(AwaitBlocksAppVue);
+export const AwaitBlocksVue = createReplComponent(AwaitBlocksAppVue, {
+    'utils.js': AwaitBlocksSupportVue
+});
 export const KeyedEachBlocksVue = createReplComponent(KeyedEachBlocksAppVue, {
   'ThingView.vue': KeyedEachBlocksSupportVue
 });
