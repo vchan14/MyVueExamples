@@ -90,4 +90,39 @@ const logicExamples = {
   ]
 }
 
-export const ALL_EXAMPLES = [introExamples, reactivityExamples, propExamples, logicExamples]
+const eventsExamples = {
+  name: 'Events',
+  examples: [
+    {
+      name: 'Dom Events',
+      path: '/domevents'
+    },
+    {
+      name: 'Inline Handlers',
+      path: '/inlinehandlers'
+    },
+    {
+      name: 'Event Modifiers',
+      path: '/eventmodifiers'
+    },
+    {
+      name: 'Component Events',
+      path: '/componentevents'
+    },
+    {
+      name: 'Event Forwarding',
+      path: '/eventforwarding'
+    },
+    {
+      name: 'Dom Event Forwarding',
+      path: '/domeventforwarding'
+    }
+  ]
+}
+export const ALL_EXAMPLES = [
+  introExamples,
+  reactivityExamples,
+  propExamples,
+  logicExamples,
+  eventsExamples
+]

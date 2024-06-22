@@ -19,9 +19,8 @@ const store = new useStore({})
 store.setFiles({
   ...store.getFiles(),
   'App.vue': props.codeString,
-  ...props.files,
+  ...props.files
 })
-
 </script>
 
 <template>

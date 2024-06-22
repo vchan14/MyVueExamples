@@ -1,11 +1,22 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import {
   AwaitBlocksVue,
+  ComponentEventsVue,
   DeclaringPropsVue,
   DefaultValuesVue,
-  DynamicAttributesVue, EachBlocksVue, ElseBlocksVue, ElseIfBlocksVue,
+  DomEventForwardingVue,
+  DomEventViewVue,
+  DynamicAttributesVue,
+  EachBlocksVue,
+  ElseBlocksVue,
+  ElseIfBlocksVue,
+  EventForwardingVue,
+  EventModifiersVue,
   HelloWorldVue,
-  HtmlDirectiveVue, IfBlocksVue, KeyedEachBlocksVue,
+  HtmlDirectiveVue,
+  IfBlocksVue,
+  InlineHandlersVue,
+  KeyedEachBlocksVue,
   NestedComponentsVue,
   ReactivityAssignmentVue,
   ReactivityDeclarationVue,
@@ -13,9 +24,6 @@ import {
   SpreadPropsVue,
   StylingVue
 } from '@/ReplFactory.js'
-import IfBlocksView from "@/views/logic/IfBlocksView.vue";
-import ElseBlocksView from "@/views/logic/ElseBlocksView.vue";
-import EachBlocksView from "@/views/logic/EachBlocksView.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -114,6 +122,36 @@ const router = createRouter({
       path: '/awaitblocks',
       name: 'awaitblocks',
       component: AwaitBlocksVue
+    },
+    {
+      path: '/domevents',
+      name: 'domevents',
+      component: DomEventViewVue
+    },
+    {
+      path: '/inlinehandlers',
+      name: 'inlinehandlers',
+      component: InlineHandlersVue
+    },
+    {
+      path: '/eventmodifiers',
+      name: 'eventmodifiers',
+      component: EventModifiersVue
+    },
+    {
+      path: '/componentevents',
+      name: 'componentevents',
+      component: ComponentEventsVue
+    },
+    {
+      path: '/eventforwarding',
+      name: 'eventforwarding',
+      component: EventForwardingVue
+    },
+    {
+      path: '/domeventforwarding',
+      name: 'domeventforwarding',
+      component: DomEventForwardingVue
     }
   ]
 })
