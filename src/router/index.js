@@ -1,4 +1,4 @@
-import { createRouter, createWebHistory } from "vue-router";
+import {createRouter, createWebHistory} from "vue-router";
 import {
   AwaitBlocksVue,
   ComponentEventsVue,
@@ -24,6 +24,19 @@ import {
   SpreadPropsVue,
   StylingVue,
 } from "@/ReplFactory.js";
+import {
+  CanvasBindingVue,
+  CheckBoxInputVue,
+  ComponentBindingVue,
+  DimensionsVue,
+  EachBlockBindingVue,
+  FileInputsVue,
+  GroupInputsVue,
+  MediaElementVue,
+  NumericInputVue,
+  SelectBindingVue,
+  SelectMultipleVue, TextAreaInputVue, TextInputVue
+} from "@/replfactory/BindingFactory.js";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -153,6 +166,71 @@ const router = createRouter({
       name: "domeventforwarding",
       component: DomEventForwardingVue,
     },
+    {
+      path: "/canvasbinding",
+      name: "canvasbinding",
+      component: CanvasBindingVue,
+    },
+      {
+        path: "/checkboxinput",
+        name: "checkboxinput",
+        component: CheckBoxInputVue,
+      },
+      {
+        path: "/componentbinding",
+        name: "componentbinding",
+        component: ComponentBindingVue,
+      },
+      {
+        path: "/dimensions",
+        name: "dimensions",
+        component: DimensionsVue,
+      },
+      {
+        path: "/eachblockbinding",
+        name: "eachblockbinding",
+        component: EachBlockBindingVue,
+      },
+      {
+        path: "/fileinputs",
+        name: "fileinputs",
+        component: FileInputsVue,
+      },
+      {
+        path: "/groupinputs",
+        name: "groupinputs",
+        component: GroupInputsVue,
+      },
+      {
+        path: "/mediaelement",
+        name: "mediaelement",
+        component: MediaElementVue,
+      },
+      {
+        path: "/numericinput",
+        name: "numericinput",
+        component: NumericInputVue,
+      },
+      {
+        path: "/selectbinding",
+        name: "selectbinding",
+        component: SelectBindingVue,
+      },
+      {
+        path: "/selectmultiple",
+        name: "selectmultiple",
+        component: SelectMultipleVue,
+      },
+      {
+        path: "/textareainput",
+        name: "textareainput",
+        component: TextAreaInputVue,
+      },
+      {
+        path: "/textinput",
+        name: "textinput",
+        component: TextInputVue,
+      },
   ],
 });
 

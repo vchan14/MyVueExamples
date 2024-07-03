@@ -46,6 +46,15 @@ import EachBlocksAppVue from "@/views/logic/EachBlocksView.vue?raw";
 import ElseBlocksAppVue from "@/views/logic/ElseBlocksView.vue?raw";
 import ElseIfBlocksAppVue from "@/views/logic/ElseIfBlocksView.vue?raw";
 import IfBlocksAppVue from "@/views/logic/IfBlocksView.vue?raw";
+import {CanvasBindingVue} from "@/replfactory/BindingFactory.js";
+
+
+// binding
+
+
+
+
+
 
 export function createReplComponent(codeString, files = {}) {
   return defineComponent({
@@ -117,3 +126,6 @@ export const EventForwardingVue = createReplComponent(EventForwardingAppVue, {
 export const DomEventViewVue = createReplComponent(DomEventViewAppVue);
 export const EventModifiersVue = createReplComponent(EventModifiersAppVue);
 export const InlineHandlersVue = createReplComponent(InlineHandlerAppVue);
+
+
+console.log(CanvasBindingVue);

@@ -3,12 +3,7 @@
   <p>Hello {{ name || 'stranger' }}!</p>
 </template>
 
-<script>
+<script setup>
 import { ref } from 'vue';
-export default {
-  setup() {
-    const name = ref('');
-    return { name };
-  },
-};
+const name = ref('');
 </script>

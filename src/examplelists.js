@@ -119,10 +119,71 @@ const eventsExamples = {
     },
   ],
 };
+
+const bindingExamples = {
+  name: "Bindings",
+  examples: [
+    {
+      name: "Canvas Binding",
+      path: "/canvasbinding",
+    },
+    {
+      name: "Checkbox Input",
+      path: "/checkboxinput",
+    },
+    {
+      name: "Component Binding",
+      path: "/componentbinding",
+    },
+    {
+      name: "Dimensions",
+      path: "/dimensions",
+    },
+    {
+      name: "Each Block Binding",
+      path: "/eachblockbinding",
+    },
+    {
+      name: "File Inputs",
+      path: "/fileinputs",
+    },
+    {
+      name: "Group Inputs",
+      path: "/groupinputs",
+    },
+    {
+      name: "Media Element",
+      path: "/mediaelement",
+    },
+    {
+      name: "Numeric Input",
+      path: "/numericinput",
+    },
+    {
+      name: "Select Binding",
+      path: "/selectbinding",
+    },
+    {
+      name: "Select Multiple",
+      path: "/selectmultiple",
+    },
+    {
+      name: "Text Area Input",
+      path: "/textareainput",
+    },
+    {
+      name: "Text Input",
+      path: "/textinput",
+    },
+  ],
+};
+
+
 export const ALL_EXAMPLES = [
   introExamples,
   reactivityExamples,
   propExamples,
   logicExamples,
   eventsExamples,
+  bindingExamples,
 ];
