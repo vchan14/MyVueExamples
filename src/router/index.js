@@ -37,6 +37,7 @@ import {
   SelectBindingVue,
   SelectMultipleVue, TextAreaInputVue, TextInputVue
 } from "@/replfactory/BindingFactory.js";
+import {LifeCycleRouterList} from "@/LifeCycleFactory.js";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -231,7 +232,9 @@ const router = createRouter({
         name: "textinput",
         component: TextInputVue,
       },
+    ...LifeCycleRouterList
   ],
 });
+
 
 export default router;
