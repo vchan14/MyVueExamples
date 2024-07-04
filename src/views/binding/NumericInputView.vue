@@ -13,7 +13,7 @@
 </template>
 
 <script setup>
-import { ref } from 'vue';
-const a = ref('1');
-const b = ref('2');
+import { ref } from "vue";
+const a = ref("1");
+const b = ref("2");
 </script>

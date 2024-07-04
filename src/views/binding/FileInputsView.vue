@@ -1,18 +1,33 @@
 <template>
   <label for="avatar">Upload a picture:</label>
-  <input accept="image/png, image/jpeg" ref="avatarInput" @change="handleFileChange" id="avatar" name="avatar" type="file" />
+  <input
+    accept="image/png, image/jpeg"
+    ref="avatarInput"
+    @change="handleFileChange"
+    id="avatar"
+    name="avatar"
+    type="file"
+  />
 
   <label for="many">Upload multiple files of any type:</label>
-  <input ref="manyInput" @change="handleFileChange" id="many" multiple type="file" />
+  <input
+    ref="manyInput"
+    @change="handleFileChange"
+    id="many"
+    multiple
+    type="file"
+  />
 
   <div v-if="files && files.length">
     <h2>Selected files:</h2>
-    <p v-for="file in Array.from(files)" :key="file.name">{{ file.name }} ({{ file.size }} bytes)</p>
+    <p v-for="file in Array.from(files)" :key="file.name">
+      {{ file.name }} ({{ file.size }} bytes)
+    </p>
   </div>
 </template>
 
 <script setup>
-import { ref, watch } from 'vue';
+import { ref, watch } from "vue";
 
 const files = ref(null);
 const avatarInput = ref(null);

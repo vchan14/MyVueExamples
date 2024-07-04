@@ -1,12 +1,7 @@
 <template>
   <h1>Before Destroy</h1>
-
 </template>
 
-<script setup>
+<script setup></script>
 
-</script>
-
-<style scoped>
-
-</style>
+<style scoped></style>

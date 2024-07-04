@@ -1,13 +1,13 @@
 <template>
   <input v-model="name" placeholder="enter your name" />
-  <p>Hello {{ name || 'stranger' }}!</p>
+  <p>Hello {{ name || "stranger" }}!</p>
 </template>
 
 <script>
-import { ref } from 'vue';
+import { ref } from "vue";
 export default {
   setup() {
-    const name = ref('');
+    const name = ref("");
     return { name };
   },
 };

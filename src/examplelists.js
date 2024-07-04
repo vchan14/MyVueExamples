@@ -1,4 +1,4 @@
-import {LifeCycleExamples} from "@/LifeCycleFactory.js";
+import { LifeCycleExamples } from "@/LifeCycleFactory.js";
 
 const introExamples = {
   name: "Introduction",
@@ -180,7 +180,6 @@ const bindingExamples = {
   ],
 };
 
-
 export const ALL_EXAMPLES = [
   introExamples,
   reactivityExamples,
@@ -188,5 +187,5 @@ export const ALL_EXAMPLES = [
   logicExamples,
   eventsExamples,
   bindingExamples,
-  LifeCycleExamples
+  LifeCycleExamples,
 ];

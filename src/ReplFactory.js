@@ -46,16 +46,10 @@ import EachBlocksAppVue from "@/views/logic/EachBlocksView.vue?raw";
 import ElseBlocksAppVue from "@/views/logic/ElseBlocksView.vue?raw";
 import ElseIfBlocksAppVue from "@/views/logic/ElseIfBlocksView.vue?raw";
 import IfBlocksAppVue from "@/views/logic/IfBlocksView.vue?raw";
-import {CanvasBindingVue} from "@/replfactory/BindingFactory.js";
-import {LifeCycleExamples} from "@/LifeCycleFactory.js";
-
+import { CanvasBindingVue } from "@/replfactory/BindingFactory.js";
+import { LifeCycleExamples } from "@/LifeCycleFactory.js";
 
 // binding
-
-
-
-
-
 
 export function createReplComponent(codeString, files = {}) {
   return defineComponent({

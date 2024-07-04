@@ -10,10 +10,10 @@
 </template>
 
 <script setup>
-import { ref, onMounted, watch } from 'vue';
+import { ref, onMounted, watch } from "vue";
 
 const size = ref(42);
-const text = ref('edit me');
+const text = ref("edit me");
 const w = ref(0);
 const h = ref(0);
 const divElement = ref(null);

@@ -2,32 +2,39 @@
   <h1>Caminandes: Llamigos</h1>
   <p>
     From
-    <a href="https://studio.blender.org/films" target="_blank">Blender Studio</a>. CC-BY
+    <a href="https://studio.blender.org/films" target="_blank">Blender Studio</a
+    >. CC-BY
   </p>
 
   <div>
     <video
-        ref="video"
-        poster="https://sveltejs.github.io/assets/caminandes-llamigos.jpg"
-        src="https://sveltejs.github.io/assets/caminandes-llamigos.mp4"
-        @mousemove="handleMove"
-        @touchmove.prevent="handleMove"
-        @mousedown="handleMousedown"
-        @mouseup="handleMouseup"
-        @timeupdate="updateTime"
-        @durationchange="updateDuration"
-        @play="updatePaused(false)"
-        @pause="updatePaused(true)"
+      ref="video"
+      poster="https://sveltejs.github.io/assets/caminandes-llamigos.jpg"
+      src="https://sveltejs.github.io/assets/caminandes-llamigos.mp4"
+      @mousemove="handleMove"
+      @touchmove.prevent="handleMove"
+      @mousedown="handleMousedown"
+      @mouseup="handleMouseup"
+      @timeupdate="updateTime"
+      @durationchange="updateDuration"
+      @play="updatePaused(false)"
+      @pause="updatePaused(true)"
     >
       <track kind="captions" />
     </video>
 
-    <div class="controls" :style="{ opacity: duration && showControls ? 1 : 0 }">
+    <div
+      class="controls"
+      :style="{ opacity: duration && showControls ? 1 : 0 }"
+    >
       <progress :value="time / duration || 0" />
 
       <div class="info">
         <span class="time">{{ format(time) }}</span>
-        <span>click anywhere to {{ paused ? 'play' : 'pause' }} / drag to seek</span>
+        <span
+          >click anywhere to {{ paused ? "play" : "pause" }} / drag to
+          seek</span
+        >
         <span class="time">{{ format(duration) }}</span>
       </div>
     </div>
@@ -35,7 +42,7 @@
 </template>
 
 <script setup>
-import { ref } from 'vue';
+import { ref } from "vue";
 
 const time = ref(0);
 const duration = ref(0);
@@ -53,9 +60,9 @@ function handleMove(e) {
   showControls.value = true;
 
   if (!duration.value) return;
-  if (e.type !== 'touchmove' && !(e.buttons & 1)) return;
+  if (e.type !== "touchmove" && !(e.buttons & 1)) return;
 
-  const clientX = e.type === 'touchmove' ? e.touches[0].clientX : e.clientX;
+  const clientX = e.type === "touchmove" ? e.touches[0].clientX : e.clientX;
   const { left, right } = video.value.getBoundingClientRect();
   time.value = (duration.value * (clientX - left)) / (right - left);
   video.value.currentTime = time.value;
@@ -85,11 +92,11 @@ function updatePaused(isPaused) {
 }
 
 function format(seconds) {
-  if (isNaN(seconds)) return '...';
+  if (isNaN(seconds)) return "...";
 
   const minutes = Math.floor(seconds / 60);
   seconds = Math.floor(seconds % 60);
-  if (seconds < 10) seconds = '0' + seconds;
+  if (seconds < 10) seconds = "0" + seconds;
 
   return `${minutes}:${seconds}`;
 }

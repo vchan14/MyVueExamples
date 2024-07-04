@@ -1,4 +1,4 @@
-import {createRouter, createWebHistory} from "vue-router";
+import { createRouter, createWebHistory } from "vue-router";
 import {
   AwaitBlocksVue,
   ComponentEventsVue,
@@ -35,9 +35,11 @@ import {
   MediaElementVue,
   NumericInputVue,
   SelectBindingVue,
-  SelectMultipleVue, TextAreaInputVue, TextInputVue
+  SelectMultipleVue,
+  TextAreaInputVue,
+  TextInputVue,
 } from "@/replfactory/BindingFactory.js";
-import {LifeCycleRouterList} from "@/LifeCycleFactory.js";
+import { LifeCycleRouterList } from "@/LifeCycleFactory.js";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -172,69 +174,68 @@ const router = createRouter({
       name: "canvasbinding",
       component: CanvasBindingVue,
     },
-      {
-        path: "/checkboxinput",
-        name: "checkboxinput",
-        component: CheckBoxInputVue,
-      },
-      {
-        path: "/componentbinding",
-        name: "componentbinding",
-        component: ComponentBindingVue,
-      },
-      {
-        path: "/dimensions",
-        name: "dimensions",
-        component: DimensionsVue,
-      },
-      {
-        path: "/eachblockbinding",
-        name: "eachblockbinding",
-        component: EachBlockBindingVue,
-      },
-      {
-        path: "/fileinputs",
-        name: "fileinputs",
-        component: FileInputsVue,
-      },
-      {
-        path: "/groupinputs",
-        name: "groupinputs",
-        component: GroupInputsVue,
-      },
-      {
-        path: "/mediaelement",
-        name: "mediaelement",
-        component: MediaElementVue,
-      },
-      {
-        path: "/numericinput",
-        name: "numericinput",
-        component: NumericInputVue,
-      },
-      {
-        path: "/selectbinding",
-        name: "selectbinding",
-        component: SelectBindingVue,
-      },
-      {
-        path: "/selectmultiple",
-        name: "selectmultiple",
-        component: SelectMultipleVue,
-      },
-      {
-        path: "/textareainput",
-        name: "textareainput",
-        component: TextAreaInputVue,
-      },
-      {
-        path: "/textinput",
-        name: "textinput",
-        component: TextInputVue,
-      },
-    ...LifeCycleRouterList
+    {
+      path: "/checkboxinput",
+      name: "checkboxinput",
+      component: CheckBoxInputVue,
+    },
+    {
+      path: "/componentbinding",
+      name: "componentbinding",
+      component: ComponentBindingVue,
+    },
+    {
+      path: "/dimensions",
+      name: "dimensions",
+      component: DimensionsVue,
+    },
+    {
+      path: "/eachblockbinding",
+      name: "eachblockbinding",
+      component: EachBlockBindingVue,
+    },
+    {
+      path: "/fileinputs",
+      name: "fileinputs",
+      component: FileInputsVue,
+    },
+    {
+      path: "/groupinputs",
+      name: "groupinputs",
+      component: GroupInputsVue,
+    },
+    {
+      path: "/mediaelement",
+      name: "mediaelement",
+      component: MediaElementVue,
+    },
+    {
+      path: "/numericinput",
+      name: "numericinput",
+      component: NumericInputVue,
+    },
+    {
+      path: "/selectbinding",
+      name: "selectbinding",
+      component: SelectBindingVue,
+    },
+    {
+      path: "/selectmultiple",
+      name: "selectmultiple",
+      component: SelectMultipleVue,
+    },
+    {
+      path: "/textareainput",
+      name: "textareainput",
+      component: TextAreaInputVue,
+    },
+    {
+      path: "/textinput",
+      name: "textinput",
+      component: TextInputVue,
+    },
+    ...LifeCycleRouterList,
   ],
 });
-
 
 export default router;

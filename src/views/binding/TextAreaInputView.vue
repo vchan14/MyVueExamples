@@ -4,15 +4,15 @@
 </template>
 
 <script setup>
-import { ref, computed } from 'vue';
+import { ref, computed } from "vue";
 
-const text = ref('Some words are *italic*, some are **bold**');
+const text = ref("Some words are *italic*, some are **bold**");
 
 function marked(markdown) {
   // Basic implementation for italic and bold
   let html = markdown
-      .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>') // Bold
-      .replace(/\*(.*?)\*/g, '<em>$1</em>'); // Italic
+    .replace(/\*\*(.*?)\*\*/g, "<strong>$1</strong>") // Bold
+    .replace(/\*(.*?)\*/g, "<em>$1</em>"); // Italic
 
   // Add more rules as needed
   return html;
