@@ -3,7 +3,5 @@
 </template>
 
 <script setup>
-import { ref } from "vue";
-
-const name = ref("world");
+const name = "world";
 </script>

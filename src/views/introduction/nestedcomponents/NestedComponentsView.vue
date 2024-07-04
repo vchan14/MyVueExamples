@@ -1,5 +1,5 @@
 <template>
-  <p>Styled!</p>
+  <p>Child component</p>
 </template>
 <style scoped>
 p {

@@ -11,9 +11,9 @@ import SubComponentVue from "@/views/introduction/nestedcomponents/NestedCompone
 import HtmlDirectiveAppVue from "@/views/introduction/HtmlDirectiveView.vue?raw";
 
 // Reactivity
-import ReactivityAssignmentView from "@/views/reactivity/ReactivityAssignmentView.vue?raw";
-import ReactivityDeclarationView from "@/views/reactivity/ReactiveDeclarationView.vue?raw";
-import ReactivityStatementsView from "@/views/reactivity/ReactiveStatementsView.vue?raw";
+import ReactivityAssignmentView from "@/views/reactivity-old/ReactivityAssignmentView.vue?raw";
+import ReactivityDeclarationView from "@/views/reactivity-old/ReactiveDeclarationView.vue?raw";
+import ReactivityStatementsView from "@/views/reactivity-old/ReactiveStatementsView.vue?raw";
 
 // Props
 import DeclaringPropsAppVue from "@/views/props/declaringprops/DeclaringPropsView.vue?raw";
@@ -47,7 +47,7 @@ import ElseBlocksAppVue from "@/views/logic/ElseBlocksView.vue?raw";
 import ElseIfBlocksAppVue from "@/views/logic/ElseIfBlocksView.vue?raw";
 import IfBlocksAppVue from "@/views/logic/IfBlocksView.vue?raw";
 import { CanvasBindingVue } from "@/replfactory/BindingFactory.js";
-import { LifeCycleExamples } from "@/LifeCycleFactory.js";
+import { LifeCycleExamples } from "@/factory/LifeCycleFactory.js";
 
 // binding
 

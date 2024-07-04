@@ -1,4 +1,5 @@
-import { LifeCycleExamples } from "@/LifeCycleFactory.js";
+import { LifeCycleExamples } from "@/factory/LifeCycleFactory.js";
+import {ReactivityExamples} from "@/factory/ReativityFactory.js";
 
 const introExamples = {
   name: "Introduction",
@@ -16,7 +17,7 @@ const introExamples = {
       path: "/styling",
     },
     {
-      name: "Nested Component",
+      name: "Scoped Styles",
       path: "/nestedcomponents",
     },
     {
@@ -183,9 +184,11 @@ const bindingExamples = {
 export const ALL_EXAMPLES = [
   introExamples,
   reactivityExamples,
+  ReactivityExamples,
   propExamples,
   logicExamples,
   eventsExamples,
   bindingExamples,
   LifeCycleExamples,
+
 ];

@@ -39,15 +39,15 @@ import {
   TextAreaInputVue,
   TextInputVue,
 } from "@/replfactory/BindingFactory.js";
-import { LifeCycleRouterList } from "@/LifeCycleFactory.js";
+import { LifeCycleRouterList } from "@/factory/LifeCycleFactory.js";
+import {ReactivityList} from "@/factory/ReativityFactory.js";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {
       path: "/",
-      name: "home",
-      component: HelloWorldVue,
+      redirect: "/helloworld",
     },
     {
       path: "/test",
@@ -235,6 +235,7 @@ const router = createRouter({
       component: TextInputVue,
     },
     ...LifeCycleRouterList,
+    ...ReactivityList,
   ],
 });
 
