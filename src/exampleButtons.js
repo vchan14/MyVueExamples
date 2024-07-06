@@ -1,49 +1,8 @@
 import { LifeCycleExamples } from "@/factory/LifeCycleFactory.js";
 import {ReactivityExamples} from "@/factory/ReativityFactory.js";
+import {IntroductionExamples} from "@/factory/IntroductionFactory.js";
+import {StylesExamples} from "@/factory/StylesFactory.js";
 
-const introExamples = {
-  name: "Introduction",
-  examples: [
-    {
-      name: "Hello World",
-      path: "/helloworld",
-    },
-    {
-      name: "Dynamic Attributes",
-      path: "/dynamicattributes",
-    },
-    {
-      name: "Styling",
-      path: "/styling",
-    },
-    {
-      name: "Scoped Styles",
-      path: "/nestedcomponents",
-    },
-    {
-      name: "HTML Directive",
-      path: "/htmldirective",
-    },
-  ],
-};
-
-const reactivityExamples = {
-  name: "Reactivity",
-  examples: [
-    {
-      name: "Reactivity Assignment",
-      path: "/reactivityassignment",
-    },
-    {
-      name: "Reactive Declaration",
-      path: "/reactivedeclaration",
-    },
-    {
-      name: "Reactive Statements",
-      path: "/reactivestatements",
-    },
-  ],
-};
 
 const propExamples = {
   name: "Props",
@@ -182,9 +141,9 @@ const bindingExamples = {
 };
 
 export const ALL_EXAMPLES = [
-  introExamples,
-  reactivityExamples,
+  IntroductionExamples,
   ReactivityExamples,
+  StylesExamples,
   propExamples,
   logicExamples,
   eventsExamples,

@@ -23,3 +23,18 @@ export const createRouterObj = (fileName, modules, path) => {
     component: createReplComponent(getVue(fileName, modules, path)),
   };
 };
+
+
+export const createRouterObjAdvanced = (fileName, component) => {
+  return {
+    path: `/${fileName}`,
+    name: fileName,
+    component,
+  };
+};
+
+export const sortExamples = (orderedList, exampleList) => {
+  return exampleList.sort((a, b) => {
+    return orderedList.indexOf(a.name) - orderedList.indexOf(b.name);
+  });
+};

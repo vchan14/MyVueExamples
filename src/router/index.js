@@ -1,4 +1,4 @@
-import { createRouter, createWebHistory } from "vue-router";
+import {createRouter, createWebHistory} from "vue-router";
 import {
   AwaitBlocksVue,
   ComponentEventsVue,
@@ -6,23 +6,15 @@ import {
   DefaultValuesVue,
   DomEventForwardingVue,
   DomEventViewVue,
-  DynamicAttributesVue,
   EachBlocksVue,
   ElseBlocksVue,
   ElseIfBlocksVue,
   EventForwardingVue,
   EventModifiersVue,
-  HelloWorldVue,
-  HtmlDirectiveVue,
   IfBlocksVue,
   InlineHandlersVue,
   KeyedEachBlocksVue,
-  NestedComponentsVue,
-  ReactivityAssignmentVue,
-  ReactivityDeclarationVue,
-  ReactivityStatementsVue,
   SpreadPropsVue,
-  StylingVue,
 } from "@/ReplFactory.js";
 import {
   CanvasBindingVue,
@@ -39,8 +31,10 @@ import {
   TextAreaInputVue,
   TextInputVue,
 } from "@/replfactory/BindingFactory.js";
-import { LifeCycleRouterList } from "@/factory/LifeCycleFactory.js";
+import {LifeCycleRouterList} from "@/factory/LifeCycleFactory.js";
 import {ReactivityList} from "@/factory/ReativityFactory.js";
+import {IntroductionRouterList} from "@/factory/IntroductionFactory.js";
+import {StyleRouterList} from "@/factory/StylesFactory.js";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -48,51 +42,6 @@ const router = createRouter({
     {
       path: "/",
       redirect: "/helloworld",
-    },
-    {
-      path: "/test",
-      name: "test",
-      component: () => import("../views/TestView.vue"),
-    },
-    {
-      path: "/helloworld",
-      name: "helloworld",
-      component: HelloWorldVue,
-    },
-    {
-      path: "/dynamicattributes",
-      name: "dynamicattributes",
-      component: DynamicAttributesVue,
-    },
-    {
-      path: "/styling",
-      name: "styling",
-      component: StylingVue,
-    },
-    {
-      path: "/nestedcomponents",
-      name: "nestedcomponents",
-      component: NestedComponentsVue,
-    },
-    {
-      path: "/htmldirective",
-      name: "htmldirective",
-      component: HtmlDirectiveVue,
-    },
-    {
-      path: "/reactivityassignment",
-      name: "reactivityassignment",
-      component: ReactivityAssignmentVue,
-    },
-    {
-      path: "/reactivedeclaration",
-      name: "reactivedeclaration",
-      component: ReactivityDeclarationVue,
-    },
-    {
-      path: "/reactivestatements",
-      name: "reactivestatements",
-      component: ReactivityStatementsVue,
     },
     {
       path: "/declaringprops",
@@ -234,8 +183,10 @@ const router = createRouter({
       name: "textinput",
       component: TextInputVue,
     },
+    ...IntroductionRouterList,
     ...LifeCycleRouterList,
     ...ReactivityList,
+    ...StyleRouterList,
   ],
 });
 

@@ -2,11 +2,11 @@
   <p>Child styles don't affect parent component.</p>
   <p>But parent styles do affect the direct child.</p>
 
-  <NestedComponent />
+  <ScopedStylesChild />
 </template>
 
 <script setup>
-import NestedComponent from "./NestedComponent.vue";
+import ScopedStylesChild from "./ScopedStylesChild.vue";
 </script>
 
 <style scoped>

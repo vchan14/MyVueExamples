@@ -7,7 +7,9 @@
 
 <script setup>
 import { ref } from "vue";
-const count = ref(0); // ref returns a reactive object that has only .value property
+// ref returns a reactive object that has only .value property
+// can be used for both primitive and non-primitive values
+const count = ref(0);
 const handleClick = () => {
   count.value++; // .value is required to get/set the value inside <script> tag
 };
