@@ -28,7 +28,7 @@ const orderedList = [
 
 exampleList = sortExamples(orderedList, exampleList);
 
-export const IntroductionExamples = {
+export const IntroductionButtonExamples = {
   name: "Introduction",
   examples: exampleList,
 };

@@ -19,7 +19,7 @@ export const LifeCycleRouterList = fileNames.map((filename) =>
   createRouterObj(filename, modules, path),
 );
 
-export const LifeCycleExamples = {
+export const LifeCycleButtonExamples = {
   name: "Life Cycle",
   examples: exampleList,
 };

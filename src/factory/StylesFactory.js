@@ -60,7 +60,7 @@ const orderedList = [
 exampleList = sortExamples(orderedList, exampleList);
 
 
-export const StylesExamples = {
+export const StyleButtonExamples = {
   name: "Styles",
   examples: exampleList,
 };

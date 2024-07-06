@@ -1,7 +1,7 @@
-import { LifeCycleExamples } from "@/factory/LifeCycleFactory.js";
-import {ReactivityExamples} from "@/factory/ReativityFactory.js";
-import {IntroductionExamples} from "@/factory/IntroductionFactory.js";
-import {StylesExamples} from "@/factory/StylesFactory.js";
+import { LifeCycleButtonExamples } from "@/factory/LifeCycleFactory.js";
+import {ReactivityButtonExamples} from "@/factory/ReativityFactory.js";
+import {IntroductionButtonExamples} from "@/factory/IntroductionFactory.js";
+import {StyleButtonExamples} from "@/factory/StylesFactory.js";
 
 
 const propExamples = {
@@ -141,13 +141,13 @@ const bindingExamples = {
 };
 
 export const ALL_EXAMPLES = [
-  IntroductionExamples,
-  ReactivityExamples,
-  StylesExamples,
+  IntroductionButtonExamples,
+  ReactivityButtonExamples,
+  StyleButtonExamples,
   propExamples,
   logicExamples,
   eventsExamples,
   bindingExamples,
-  LifeCycleExamples,
+  LifeCycleButtonExamples,
 
 ];

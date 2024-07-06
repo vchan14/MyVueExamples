@@ -32,7 +32,7 @@ import {
   TextInputVue,
 } from "@/replfactory/BindingFactory.js";
 import {LifeCycleRouterList} from "@/factory/LifeCycleFactory.js";
-import {ReactivityList} from "@/factory/ReativityFactory.js";
+import {ReactivityRouterList} from "@/factory/ReativityFactory.js";
 import {IntroductionRouterList} from "@/factory/IntroductionFactory.js";
 import {StyleRouterList} from "@/factory/StylesFactory.js";
 
@@ -185,7 +185,7 @@ const router = createRouter({
     },
     ...IntroductionRouterList,
     ...LifeCycleRouterList,
-    ...ReactivityList,
+    ...ReactivityRouterList,
     ...StyleRouterList,
   ],
 });

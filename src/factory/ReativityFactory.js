@@ -24,11 +24,11 @@ const orderedList = [
 exampleList = sortExamples(orderedList, exampleList);
 
 
-export const ReactivityList = fileNames.map((filename) =>
+export const ReactivityRouterList = fileNames.map((filename) =>
   createRouterObj(filename, modules, path),
 );
 
-export const ReactivityExamples = {
+export const ReactivityButtonExamples = {
   name: "Reactivity",
   examples: exampleList,
 };
