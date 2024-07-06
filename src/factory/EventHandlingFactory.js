@@ -1,8 +1,8 @@
 import {createExample, createRouterObj, sortExamples} from "@/util.js";
 
-const path = "/src/views/rendering/";
+const path = "/src/views/eventhandling/";
 
-const modules = import.meta.glob("/src/views/rendering/*.vue", {
+const modules = import.meta.glob("/src/views/eventhandling/*.vue", {
   eager: true,
   query: "?raw",
   import: "default",
@@ -13,7 +13,7 @@ const fileNames = Object.keys(modules).map(key => key.replace(path, "").replace(
 
 let exampleList = fileNames.map(filename => createExample(filename));
 
-let RenderingRouterList = fileNames.map(filename => createRouterObj(filename, modules, path));
+let EventHandlingRouterList = fileNames.map(filename => createRouterObj(filename, modules, path));
 
 const orderedList = [
   "If Conditional",
@@ -25,10 +25,9 @@ const orderedList = [
 // // write a util method given to sort exampleList based on orderedList
 exampleList = sortExamples(orderedList, exampleList);
 
-export const RenderingButtonExamples = {
-  name: "Rendering",
+export const EventHandlingButtonExamples = {
+  name: "Event Handling",
   examples: exampleList,
 };
 
-
-export { RenderingRouterList };
+export { EventHandlingRouterList };

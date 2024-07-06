@@ -2,6 +2,8 @@ import { LifeCycleButtonExamples } from "@/factory/LifeCycleFactory.js";
 import {ReactivityButtonExamples} from "@/factory/ReativityFactory.js";
 import {IntroductionButtonExamples} from "@/factory/IntroductionFactory.js";
 import {StyleButtonExamples} from "@/factory/StylesFactory.js";
+import {RenderingButtonExamples} from "@/factory/RenderingFactory.js";
+import {EventHandlingButtonExamples} from "@/factory/EventHandlingFactory.js";
 
 
 const propExamples = {
@@ -18,36 +20,6 @@ const propExamples = {
     {
       name: "Spread Props",
       path: "/spreadprops",
-    },
-  ],
-};
-
-const logicExamples = {
-  name: "Logic",
-  examples: [
-    {
-      name: "If Blocks",
-      path: "/ifblocks",
-    },
-    {
-      name: "Else Blocks",
-      path: "/elseblocks",
-    },
-    {
-      name: "Else If Blocks",
-      path: "/elseifblocks",
-    },
-    {
-      name: "Each Blocks",
-      path: "/eachblocks",
-    },
-    {
-      name: "Keyed Each Blocks",
-      path: "/keyedeachblocks",
-    },
-    {
-      name: "Await Blocks",
-      path: "/awaitblocks",
     },
   ],
 };
@@ -144,10 +116,12 @@ export const ALL_EXAMPLES = [
   IntroductionButtonExamples,
   ReactivityButtonExamples,
   StyleButtonExamples,
+  RenderingButtonExamples,
+  EventHandlingButtonExamples,
   propExamples,
-  logicExamples,
   eventsExamples,
   bindingExamples,
   LifeCycleButtonExamples,
+
 
 ];

@@ -1,7 +1,6 @@
 <template>
   <div>
     <button v-if="user.loggedIn" @click="toggle">Log out</button>
-
     <button v-if="!user.loggedIn" @click="toggle">Log in</button>
   </div>
 </template>
@@ -15,3 +14,5 @@ const toggle = () => {
   user.value.loggedIn = !user.value.loggedIn;
 };
 </script>
+
+https://vuejs.org/guide/essentials/conditional.html#v-if

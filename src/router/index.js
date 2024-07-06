@@ -35,6 +35,8 @@ import {LifeCycleRouterList} from "@/factory/LifeCycleFactory.js";
 import {ReactivityRouterList} from "@/factory/ReativityFactory.js";
 import {IntroductionRouterList} from "@/factory/IntroductionFactory.js";
 import {StyleRouterList} from "@/factory/StylesFactory.js";
+import {RenderingRouterList} from "@/factory/RenderingFactory.js";
+import {EventHandlingRouterList} from "@/factory/EventHandlingFactory.js";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -57,36 +59,6 @@ const router = createRouter({
       path: "/spreadprops",
       name: "spreadprops",
       component: SpreadPropsVue,
-    },
-    {
-      path: "/ifblocks",
-      name: "ifblocks",
-      component: IfBlocksVue,
-    },
-    {
-      path: "/elseifblocks",
-      name: "elseifblocks",
-      component: ElseIfBlocksVue,
-    },
-    {
-      path: "/elseblocks",
-      name: "elseblocks",
-      component: ElseBlocksVue,
-    },
-    {
-      path: "/eachblocks",
-      name: "eachblocks",
-      component: EachBlocksVue,
-    },
-    {
-      path: "/keyedeachblocks",
-      name: "keyedeachblocks",
-      component: KeyedEachBlocksVue,
-    },
-    {
-      path: "/awaitblocks",
-      name: "awaitblocks",
-      component: AwaitBlocksVue,
     },
     {
       path: "/domevents",
@@ -184,9 +156,12 @@ const router = createRouter({
       component: TextInputVue,
     },
     ...IntroductionRouterList,
-    ...LifeCycleRouterList,
     ...ReactivityRouterList,
     ...StyleRouterList,
+    ...RenderingRouterList,
+    ...LifeCycleRouterList,
+    ...EventHandlingRouterList,
+
   ],
 });
 
