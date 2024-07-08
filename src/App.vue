@@ -1,7 +1,20 @@
 <script setup>
-import { RouterView } from "vue-router";
+import {RouterView, useRoute} from "vue-router";
 import RouterButton from "@/components/RouterButton.vue";
 import { ALL_EXAMPLES } from "@/exampleButtons.js";
+import { watch} from "vue";
+import {useTitle} from "@vueuse/core";
+
+const route = useRoute()
+const title = useTitle()
+
+watch(
+    () => route.path,
+    (newPath) => {
+      title.value = `VueEx${newPath}` || 'VueEx'
+    },
+)
+
 </script>
 
 <template>
