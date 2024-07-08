@@ -1,4 +1,9 @@
-import {createExample, createRouterObj, createRouterObjAdvanced, sortExamples} from "@/util.js";
+import {
+  createExample,
+  createRouterObj,
+  createRouterObjAdvanced,
+  sortExamples,
+} from "@/util.js";
 
 const path = "/src/views/styles/";
 
@@ -15,39 +20,32 @@ const fileNames = Object.keys(modules).map((key) => {
 
 let exampleList = fileNames.map((filename) => createExample(filename));
 
-
-
 let StyleRouterList = fileNames.map((filename) =>
   createRouterObj(filename, modules, path),
 );
-
 
 /**
  * ************************************* Custom Code *************************************
  */
 const SCOPED_STYLES = "ScopedStyles";
 
-exampleList = [
-  ...exampleList,
-  createExample(SCOPED_STYLES),
-]
+exampleList = [...exampleList, createExample(SCOPED_STYLES)];
 
 import ScopedStyles from "@/views/styles/scopedstyles/ScopedStyles.vue?raw";
 import ScopedStylesChild from "@/views/styles/scopedstyles/ScopedStylesChild.vue?raw";
-import {createReplComponent} from "@/ReplFactory.js";
+import { createReplComponent } from "@/ReplFactory.js";
 
-const scopedStylesComponent = createReplComponent(ScopedStyles, {"ScopedStylesChild.vue": ScopedStylesChild})
+const scopedStylesComponent = createReplComponent(ScopedStyles, {
+  "ScopedStylesChild.vue": ScopedStylesChild,
+});
 
 StyleRouterList = [
   ...StyleRouterList,
   createRouterObjAdvanced(SCOPED_STYLES, scopedStylesComponent),
-]
+];
 /**
  * ************************************* Custom Code *************************************
  */
-
-
-
 
 const orderedList = [
   "Styling Basic",
@@ -55,10 +53,9 @@ const orderedList = [
   "Dynamic Inline Styles",
   "Binding Array Of Styles",
   "Scoped Styles",
-]
+];
 
 exampleList = sortExamples(orderedList, exampleList);
-
 
 export const StyleButtonExamples = {
   name: "Styles",

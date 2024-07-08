@@ -1,10 +1,9 @@
 import { LifeCycleButtonExamples } from "@/factory/LifeCycleFactory.js";
-import {ReactivityButtonExamples} from "@/factory/ReativityFactory.js";
-import {IntroductionButtonExamples} from "@/factory/IntroductionFactory.js";
-import {StyleButtonExamples} from "@/factory/StylesFactory.js";
-import {RenderingButtonExamples} from "@/factory/RenderingFactory.js";
-import {EventHandlingButtonExamples} from "@/factory/EventHandlingFactory.js";
-
+import { ReactivityButtonExamples } from "@/factory/ReativityFactory.js";
+import { IntroductionButtonExamples } from "@/factory/IntroductionFactory.js";
+import { StyleButtonExamples } from "@/factory/StylesFactory.js";
+import { RenderingButtonExamples } from "@/factory/RenderingFactory.js";
+import { EventHandlingButtonExamples } from "@/factory/EventHandlingFactory.js";
 
 const propExamples = {
   name: "Props",
@@ -122,6 +121,4 @@ export const ALL_EXAMPLES = [
   eventsExamples,
   bindingExamples,
   LifeCycleButtonExamples,
-
-
 ];

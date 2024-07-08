@@ -1,19 +1,13 @@
 import {createRouter, createWebHistory} from "vue-router";
 import {
-  AwaitBlocksVue,
   ComponentEventsVue,
   DeclaringPropsVue,
   DefaultValuesVue,
   DomEventForwardingVue,
   DomEventViewVue,
-  EachBlocksVue,
-  ElseBlocksVue,
-  ElseIfBlocksVue,
   EventForwardingVue,
   EventModifiersVue,
-  IfBlocksVue,
   InlineHandlersVue,
-  KeyedEachBlocksVue,
   SpreadPropsVue,
 } from "@/ReplFactory.js";
 import {
@@ -161,7 +155,6 @@ const router = createRouter({
     ...RenderingRouterList,
     ...LifeCycleRouterList,
     ...EventHandlingRouterList,
-
   ],
 });
 

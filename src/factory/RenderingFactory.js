@@ -1,4 +1,4 @@
-import {createExample, createRouterObj, sortExamples} from "@/util.js";
+import { createExample, createRouterObj, sortExamples } from "@/util.js";
 
 const path = "/src/views/rendering/";
 
@@ -9,11 +9,15 @@ const modules = import.meta.glob("/src/views/rendering/*.vue", {
 });
 
 // Extract the file name without the directory and extension
-const fileNames = Object.keys(modules).map(key => key.replace(path, "").replace(".vue", ""));
+const fileNames = Object.keys(modules).map((key) =>
+  key.replace(path, "").replace(".vue", ""),
+);
 
-let exampleList = fileNames.map(filename => createExample(filename));
+let exampleList = fileNames.map((filename) => createExample(filename));
 
-let RenderingRouterList = fileNames.map(filename => createRouterObj(filename, modules, path));
+let RenderingRouterList = fileNames.map((filename) =>
+  createRouterObj(filename, modules, path),
+);
 
 const orderedList = [
   "If Conditional",
@@ -29,6 +33,5 @@ export const RenderingButtonExamples = {
   name: "Rendering",
   examples: exampleList,
 };
-
 
 export { RenderingRouterList };

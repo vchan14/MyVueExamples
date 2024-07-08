@@ -7,5 +7,5 @@
 
 <script setup>
 // Define a reactive array of items
-const items = ['Apple', 'Banana', 'Cherry'];
+const items = ["Apple", "Banana", "Cherry"];
 </script>

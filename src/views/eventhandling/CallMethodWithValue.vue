@@ -6,7 +6,6 @@
 </template>
 
 <script setup>
-import { ref } from 'vue';
 
 function sayHello(name, event) {
   alert(`Hello, ${name}!!! event type - ${event.type}!`);

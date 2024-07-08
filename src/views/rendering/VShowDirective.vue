@@ -1,23 +1,26 @@
 <template>
   <div class="container">
     <div>
-      Check both boxes and toggle the buttons.
-      v-show still preserve the state but v-if not.</div>
+      Check both boxes and toggle the buttons. v-show still preserve the state
+      but v-if not.
+    </div>
     <div>
-      <button @click="toggleShow=!toggleShow">Toggle Input with v-show</button>
+      <button @click="toggleShow = !toggleShow">
+        Toggle Input with v-show
+      </button>
       <input v-show="toggleShow" type="checkbox" />
     </div>
     <div>
-      <button @click="toggleIf=!toggleIf">Toggle Input with v-if</button>
-      <input v-if="toggleIf" type="checkbox"/>
+      <button @click="toggleIf = !toggleIf">Toggle Input with v-if</button>
+      <input v-if="toggleIf" type="checkbox" />
     </div>
   </div>
 </template>
 
 <script setup>
-import { ref } from 'vue'
-const toggleShow = ref(true)
-const toggleIf = ref(true)
+import { ref } from "vue";
+const toggleShow = ref(true);
+const toggleIf = ref(true);
 </script>
 
 <style scoped>
@@ -29,7 +32,6 @@ const toggleIf = ref(true)
 }
 .container div {
   display: flex;
-
 }
 </style>
 https://vuejs.org/guide/essentials/conditional.html#v-show

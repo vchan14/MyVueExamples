@@ -1,7 +1,6 @@
 // createReplComponent.js
-import {defineComponent, h} from "vue";
+import { defineComponent, h } from "vue";
 import ReplWrapper from "@/components/ReplWrapper.vue"; // Adjust the path accordingly
-
 
 // Props
 import DeclaringPropsAppVue from "@/views/props/declaringprops/DeclaringPropsView.vue?raw";
@@ -34,7 +33,6 @@ import EachBlocksAppVue from "@/views/logic/EachBlocksView.vue?raw";
 import ElseBlocksAppVue from "@/views/logic/ElseBlocksView.vue?raw";
 import ElseIfBlocksAppVue from "@/views/logic/ElseIfBlocksView.vue?raw";
 import IfBlocksAppVue from "@/views/logic/IfBlocksView.vue?raw";
-
 
 // binding
 

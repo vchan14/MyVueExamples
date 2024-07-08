@@ -21,21 +21,19 @@
 </template>
 
 <script setup>
-
 const doThis = () => {
-  alert('doThis called');
+  alert("doThis called");
 };
 
 const onSubmit = () => {
-  alert('Form submitted');
+  alert("Form submitted");
 };
 
 const doThat = () => {
-  alert('doThat called');
+  alert("doThat called");
 };
 </script>
 
 <style scoped>
 /* Style as needed */
 </style>
-

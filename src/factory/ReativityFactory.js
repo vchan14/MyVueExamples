@@ -1,4 +1,4 @@
-import {createExample, createRouterObj, sortExamples} from "@/util.js";
+import { createExample, createRouterObj, sortExamples } from "@/util.js";
 
 const path = "/src/views/reactivity/";
 
@@ -15,14 +15,9 @@ const fileNames = Object.keys(modules).map((key) => {
 
 let exampleList = fileNames.map((filename) => createExample(filename));
 
-const orderedList = [
-  "Reactive Primitives",
-  "Reactive Objects",
-  "Computed Ref"
-]
+const orderedList = ["Reactive Primitives", "Reactive Objects", "Computed Ref"];
 
 exampleList = sortExamples(orderedList, exampleList);
-
 
 export const ReactivityRouterList = fileNames.map((filename) =>
   createRouterObj(filename, modules, path),

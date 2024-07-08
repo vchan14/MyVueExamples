@@ -7,14 +7,14 @@
 </template>
 
 <script setup>
-import { reactive } from 'vue';
+import { reactive } from "vue";
 
 // reactive() makes non-primitive values reactive such as object, array, set, map
 const state = reactive({
-  message: 'Hello Vue 3!',
+  message: "Hello Vue 3!",
   nested: {
-    count: 0
-  }
+    count: 0,
+  },
 });
 
 const incrementNestedCount = () => {

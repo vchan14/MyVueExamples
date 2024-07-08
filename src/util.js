@@ -24,7 +24,6 @@ export const createRouterObj = (fileName, modules, path) => {
   };
 };
 
-
 export const createRouterObjAdvanced = (fileName, component) => {
   return {
     path: `/${fileName}`,
