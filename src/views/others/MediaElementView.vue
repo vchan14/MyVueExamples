@@ -72,7 +72,7 @@ function handleMousedown() {
   lastMouseDown = new Date();
 }
 
-function handleMouseup(e) {
+function handleMouseup() {
   if (new Date() - lastMouseDown < 300) {
     if (paused.value) video.value.play();
     else video.value.pause();

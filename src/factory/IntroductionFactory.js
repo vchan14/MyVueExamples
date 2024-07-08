@@ -27,8 +27,9 @@ const orderedList = [
   "Hello World",
   "Raw Html",
   "Dynamic Attributes",
-  "Styling Basic",
-  "Scoped Styles",
+  "Text Input",
+  "Checkbox Input",
+  "Numeric Input"
 ];
 
 // write a util method given to sort exampleList based on orderedList

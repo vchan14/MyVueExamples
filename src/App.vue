@@ -7,7 +7,6 @@ import {useTitle} from "@vueuse/core";
 
 const route = useRoute()
 const title = useTitle()
-
 watch(
     () => route.path,
     (newPath) => {

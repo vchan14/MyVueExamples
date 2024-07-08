@@ -1,12 +1,5 @@
 <template>
-  <div
-    style="
-      display: flex;
-      flex-direction: column;
-      max-width: 300px;
-      row-gap: 20px;
-    "
-  >
+  <div>
     <!-- Using v-on:click to call a method -->
     <button v-on:click="incrementCount">Increment with a method call</button>
     <!-- `v-on:click` can be shorten to `@click` -->
