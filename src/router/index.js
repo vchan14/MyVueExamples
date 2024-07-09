@@ -5,6 +5,7 @@ import {IntroductionRouterList} from "@/factory/IntroductionFactory.js";
 import {StyleRouterList} from "@/factory/StylesFactory.js";
 import {RenderingRouterList} from "@/factory/RenderingFactory.js";
 import {EventHandlingRouterList} from "@/factory/EventHandlingFactory.js";
+import TestView from "@/views/TestView.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -27,6 +28,11 @@ const router = createRouter({
       path: "/spreadprops",
       name: "spreadprops",
       component: SpreadPropsVue,
+    },
+    {
+      path: "/test",
+      name: "testme",
+      component: TestView
     },
 
     ...IntroductionRouterList,

@@ -14,3 +14,9 @@ const catGif =
   "https://media.glamour.com/photos/580e1dc07a52574c7ef91071/master/w_2580%2Cc_limit/giphy%2520(1).gif";
 const catAlt = "cat";
 </script>
+
+<style scoped>
+  img {
+    max-width: 300px;
+  }
+</style>
