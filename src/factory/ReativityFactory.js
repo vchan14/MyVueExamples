@@ -26,4 +26,5 @@ export const ReactivityRouterList = fileNames.map((filename) =>
 export const ReactivityButtonExamples = {
   name: "Reactivity",
   examples: exampleList,
+  link: "https://vuejs.org/guide/essentials/reactivity-fundamentals.html",
 };

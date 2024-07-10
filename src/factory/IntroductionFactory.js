@@ -39,6 +39,7 @@ exampleList = sortExamples(orderedList, exampleList);
 export const IntroductionButtonExamples = {
   name: "Introduction",
   examples: exampleList,
+  link: "https://vuejs.org/guide/essentials/template-syntax.html",
 };
 
 export { IntroductionRouterList };

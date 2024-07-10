@@ -32,6 +32,7 @@ exampleList = sortExamples(orderedList, exampleList);
 export const RenderingButtonExamples = {
   name: "Rendering",
   examples: exampleList,
+  link: "https://vuejs.org/guide/essentials/conditional.html",
 };
 
 export { RenderingRouterList };

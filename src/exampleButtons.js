@@ -20,6 +20,7 @@ const propExamples = {
       path: "/spreadprops",
     },
   ],
+  link: "https://vuejs.org/guide/components/props.html",
 };
 
 

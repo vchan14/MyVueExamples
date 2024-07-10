@@ -35,6 +35,7 @@ exampleList = sortExamples(orderedList, exampleList);
 const EventHandlingButtonExamples = {
   name: "Event Handling",
   examples: exampleList,
+  link: "https://vuejs.org/guide/essentials/event-handling.html",
 };
 
 export { EventHandlingRouterList, EventHandlingButtonExamples };

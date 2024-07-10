@@ -60,6 +60,7 @@ exampleList = sortExamples(orderedList, exampleList);
 export const StyleButtonExamples = {
   name: "Styles",
   examples: exampleList,
+  link: "https://vuejs.org/guide/essentials/class-and-style.html",
 };
 
 export { StyleRouterList };
