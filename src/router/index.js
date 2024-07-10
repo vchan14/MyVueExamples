@@ -12,7 +12,7 @@ const router = createRouter({
   routes: [
     {
       path: "/",
-      redirect: "/helloworld",
+      redirect: "/HelloWorld",
     },
     {
       path: "/declaringprops",

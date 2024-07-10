@@ -7,7 +7,7 @@ export const pascalCaseToWords = (pascalCaseString) => {
 export const createExample = (fileName) => {
   return {
     name: pascalCaseToWords(fileName),
-    path: `/${fileName.toLowerCase()}`,
+    path: `/${fileName}`,
   };
 };
 
@@ -17,21 +17,17 @@ const getVue = (fileName, inModules, path) => {
 };
 
 export const createRouterObj = (fileName, modules, path) => {
-  const lowercase = fileName.toLowerCase();
-  console.log('visalll', lowercase)
-
   return {
-    path: `/${lowercase}`,
-    name: lowercase,
+    path: `/${fileName}`,
+    name: fileName,
     component: createReplComponent(getVue(fileName, modules, path)),
   };
 };
 
 export const createRouterObjAdvanced = (fileName, component) => {
-  const lowercase = fileName.toLowerCase();
   return {
-    path: `/${lowercase}`,
-    name: lowercase,
+    path: `/${fileName}`,
+    name: fileName,
     component,
   };
 };
