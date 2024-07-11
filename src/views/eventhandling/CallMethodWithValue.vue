@@ -6,7 +6,6 @@
 </template>
 
 <script setup>
-
 function sayHello(name, event) {
   alert(`Hello, ${name}!!! event type - ${event.type}!`);
 }

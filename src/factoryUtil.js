@@ -4,7 +4,7 @@ import {
   createRouterObjAdvanced,
   extractUniqueFolderNames,
   organizeFilesByFolder,
-  sortExamples
+  sortExamples,
 } from "@/util.js";
 import { createReplComponent } from "@/ReplFactory.js";
 
@@ -16,21 +16,23 @@ import { createReplComponent } from "@/ReplFactory.js";
  * @param {string} sectionName - The name of the section.
  * @returns {{ ButtonExamples: Object, RouterList: Object[] }}
  */
-export function generateButtonExamplesAndRouterList(basePath,
-                                                    singleFileComponents,
-                                                    folderComponents,
-                                                    sectionName,
-                                                    link,
-                                                    orderedList = []) {
-
-
+export function generateButtonExamplesAndRouterList(
+  basePath,
+  singleFileComponents,
+  folderComponents,
+  sectionName,
+  link,
+  orderedList = [],
+) {
   // Generate examples and router objects for single file components
-  let exampleList = Object.keys(singleFileComponents).map(key => {
+  let exampleList = Object.keys(singleFileComponents).map((key) => {
     const filename = key.replace(basePath, "").replace(".vue", "");
     return createExample(filename);
   });
 
-  let routerList = exampleList.map(({ name }) => createRouterObj(name, singleFileComponents, basePath));
+  let routerList = exampleList.map(({ name }) =>
+    createRouterObj(name, singleFileComponents, basePath),
+  );
 
   // Extract folder names and generate examples for them
   const folderNames = extractUniqueFolderNames(folderComponents);
@@ -56,7 +58,7 @@ export function generateButtonExamplesAndRouterList(basePath,
     ButtonExamples: {
       name: sectionName,
       examples: exampleList,
-      link: link
+      link: link,
     },
     RouterList: routerList,
   };

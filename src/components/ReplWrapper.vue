@@ -7,7 +7,7 @@ const props = defineProps({
   codeString: {
     type: String,
     required: false,
-    default: ""
+    default: "",
   },
   files: {
     type: Object,
@@ -28,7 +28,6 @@ if (props.codeString) {
     ...props.files,
   });
 }
-
 </script>
 
 <template>

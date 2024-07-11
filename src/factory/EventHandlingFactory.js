@@ -1,5 +1,8 @@
 import { createExample, createRouterObj, sortExamples } from "@/util.js";
-import {EventHandling2ButtonExamples, EventHandling2Router} from "@/factory/EventHandling2Factory.js";
+import {
+  EventHandling2ButtonExamples,
+  EventHandling2Router,
+} from "@/factory/EventHandling2Factory.js";
 
 const path = "/src/views/eventhandling/";
 
@@ -15,12 +18,12 @@ const fileNames = Object.keys(modules).map((key) =>
 );
 
 let exampleList = fileNames.map((filename) => createExample(filename));
-exampleList = [...exampleList, ...EventHandling2ButtonExamples]
+exampleList = [...exampleList, ...EventHandling2ButtonExamples];
 
 let EventHandlingRouterList = fileNames.map((filename) =>
   createRouterObj(filename, modules, path),
 );
-EventHandlingRouterList = [...EventHandlingRouterList, ...EventHandling2Router]
+EventHandlingRouterList = [...EventHandlingRouterList, ...EventHandling2Router];
 
 const orderedList = [
   "If Conditional",

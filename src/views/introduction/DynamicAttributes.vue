@@ -16,7 +16,7 @@ const catAlt = "cat";
 </script>
 
 <style scoped>
-  img {
-    max-width: 300px;
-  }
+img {
+  max-width: 300px;
+}
 </style>

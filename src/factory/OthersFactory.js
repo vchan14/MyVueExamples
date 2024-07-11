@@ -4,29 +4,31 @@ import {
   createRouterObjAdvanced,
   extractUniqueFolderNames,
   organizeFilesByFolder,
-  sortExamples
+  sortExamples,
 } from "@/util.js";
 import { createReplComponent } from "@/ReplFactory.js";
 
 const path = "/src/views/others/";
 
 // Import single file components
-const singleFileComponents = import.meta.glob('/src/views/others/*.vue', {
+const singleFileComponents = import.meta.glob("/src/views/others/*.vue", {
   eager: true,
   query: "?raw",
   import: "default",
 });
 
 // Generate examples and router objects for single file components
-let exampleList = Object.keys(singleFileComponents).map(key => {
+let exampleList = Object.keys(singleFileComponents).map((key) => {
   const filename = key.replace(path, "").replace(".vue", "");
   return createExample(filename);
 });
 
-let othersRouterList = exampleList.map(({ name }) => createRouterObj(name, singleFileComponents, path));
+let othersRouterList = exampleList.map(({ name }) =>
+  createRouterObj(name, singleFileComponents, path),
+);
 
 // Import components from folders
-const folderComponents = import.meta.glob('/src/views/others/*/*.vue', {
+const folderComponents = import.meta.glob("/src/views/others/*/*.vue", {
   eager: true,
   query: "?raw",
   import: "default",

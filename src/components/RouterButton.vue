@@ -1,6 +1,6 @@
 <script setup>
-import {computed, defineProps} from "vue";
-import {useRoute} from "vue-router";
+import { computed, defineProps } from "vue";
+import { useRoute } from "vue-router";
 
 const props = defineProps({
   toPath: {
@@ -15,7 +15,7 @@ const props = defineProps({
 
 const route = useRoute();
 const isSelected = computed(() => {
-  return route.path === props.toPath
+  return route.path === props.toPath;
 });
 </script>
 

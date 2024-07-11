@@ -1,8 +1,4 @@
-import {
-  createExample,
-  createRouterObj,
-  sortExamples,
-} from "@/util.js";
+import { createExample, createRouterObj, sortExamples } from "@/util.js";
 
 const path = "/src/views/introduction/";
 
@@ -29,7 +25,7 @@ const orderedList = [
   "Dynamic Attributes",
   "Text Input",
   "Checkbox Input",
-  "Numeric Input"
+  "Numeric Input",
 ];
 
 // write a util method given to sort exampleList based on orderedList

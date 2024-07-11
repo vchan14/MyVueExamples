@@ -55,7 +55,6 @@ export const extractUniqueFolderNames = (filesObject) => {
   return [...folderNames];
 };
 
-
 /**
  * Organizes files into a structured object based on their folder paths.
  *
@@ -69,7 +68,7 @@ export const extractUniqueFolderNames = (filesObject) => {
 export const organizeFilesByFolder = (filesObject) => {
   const organized = {};
   for (const [path, content] of Object.entries(filesObject)) {
-    const parts = path.split('/');
+    const parts = path.split("/");
     const fileName = parts.pop(); // Get the file name
     const folderName = parts.pop(); // Get the folder name
 
@@ -78,7 +77,7 @@ export const organizeFilesByFolder = (filesObject) => {
     }
 
     organized[folderName][fileName] = content; // Add the file object to the folder
-  };
+  }
 
   return organized;
 };
