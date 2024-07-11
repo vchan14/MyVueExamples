@@ -15,8 +15,6 @@ const props = defineProps({
 
 const route = useRoute();
 const isSelected = computed(() => {
-  console.log(props.toPath)
-
   return route.path === props.toPath
 });
 </script>

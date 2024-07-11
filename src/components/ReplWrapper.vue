@@ -6,7 +6,8 @@ import CodeMirror from "@vue/repl/codemirror-editor";
 const props = defineProps({
   codeString: {
     type: String,
-    required: true,
+    required: false,
+    default: ""
   },
   files: {
     type: Object,
@@ -15,12 +16,19 @@ const props = defineProps({
 });
 
 const store = new useStore({});
+if (props.codeString) {
+  store.setFiles({
+    ...store.getFiles(),
+    "App.vue": props.codeString,
+    ...props.files,
+  });
+} else {
+  store.setFiles({
+    ...store.getFiles(),
+    ...props.files,
+  });
+}
 
-store.setFiles({
-  ...store.getFiles(),
-  "App.vue": props.codeString,
-  ...props.files,
-});
 </script>
 
 <template>

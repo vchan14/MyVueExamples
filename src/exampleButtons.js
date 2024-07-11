@@ -3,26 +3,8 @@ import { IntroductionButtonExamples } from "@/factory/IntroductionFactory.js";
 import { StyleButtonExamples } from "@/factory/StylesFactory.js";
 import { RenderingButtonExamples } from "@/factory/RenderingFactory.js";
 import { EventHandlingButtonExamples } from "@/factory/EventHandlingFactory.js";
-
-const propExamples = {
-  name: "Props",
-  examples: [
-    {
-      name: "Declaring Props",
-      path: "/declaringprops",
-    },
-    {
-      name: "Default Values",
-      path: "/defaultvalues",
-    },
-    {
-      name: "Spread Props",
-      path: "/spreadprops",
-    },
-  ],
-  link: "https://vuejs.org/guide/components/props.html",
-};
-
+import {OthersButtonExamples} from "@/factory/OthersFactory.js";
+import {PropsButtonExamples} from "@/factory/PropsFactory.js";
 
 export const ALL_EXAMPLES = [
   IntroductionButtonExamples,
@@ -30,5 +12,6 @@ export const ALL_EXAMPLES = [
   StyleButtonExamples,
   RenderingButtonExamples,
   EventHandlingButtonExamples,
-  propExamples,
+  PropsButtonExamples,
+  OthersButtonExamples,
 ];
