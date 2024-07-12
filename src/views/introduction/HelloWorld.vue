@@ -6,4 +6,3 @@
 <script setup>
 const name = "world";
 </script>
-https://vuejs.org/guide/essentials/template-syntax.html#text-interpolation

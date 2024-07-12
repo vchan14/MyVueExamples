@@ -15,4 +15,3 @@
 import { ref } from "vue";
 let x = ref(4);
 </script>
-` https://vuejs.org/guide/essentials/conditional.html#v-else

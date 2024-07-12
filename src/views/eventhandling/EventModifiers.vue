@@ -33,7 +33,3 @@ const doThat = () => {
   alert("doThat called");
 };
 </script>
-
-<style scoped>
-/* Style as needed */
-</style>

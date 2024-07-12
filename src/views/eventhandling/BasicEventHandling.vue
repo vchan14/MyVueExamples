@@ -20,4 +20,3 @@ function incrementCount(event) {
   console.log("Event:", event);
 }
 </script>
-https://vuejs.org/guide/essentials/event-handling.html

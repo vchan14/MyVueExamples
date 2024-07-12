@@ -34,4 +34,3 @@ const toggleIf = ref(true);
   display: flex;
 }
 </style>
-https://vuejs.org/guide/essentials/conditional.html#v-show
