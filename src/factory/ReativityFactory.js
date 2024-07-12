@@ -1,30 +1,34 @@
-import { createExample, createRouterObj, sortExamples } from "@/util.js";
+const orderedList = ["Reactive Primitives", "Reactive Objects", "Computed Ref"];
+
+import { generateButtonExamplesAndRouterList } from "@/factoryUtil.js";
+
 
 const path = "/src/views/reactivity/";
+const sectionName = "Reactivity";
+const link = "https://vuejs.org/guide/essentials/reactivity-fundamentals.html";
 
-const modules = import.meta.glob("/src/views/reactivity/*.vue", {
+const singleFileComponents = import.meta.glob("/src/views/reactivity/*.vue", {
   eager: true,
   query: "?raw",
   import: "default",
 });
 
-const fileNames = Object.keys(modules).map((key) => {
-  // Extract the file name without the directory and extension
-  return key.replace(path, "").replace(".vue", "");
+const folderComponents = import.meta.glob("/src/views/reactivity/*/*.vue", {
+  eager: true,
+  query: "?raw",
+  import: "default",
 });
 
-let exampleList = fileNames.map((filename) => createExample(filename));
+const { ButtonExamples: ReactivityButtonExamples, RouterList: ReactivityRouterList } =
+  generateButtonExamplesAndRouterList(
+    path,
+    singleFileComponents,
+    folderComponents,
+    sectionName,
+    link,
+    orderedList,
+  );
 
-const orderedList = ["Reactive Primitives", "Reactive Objects", "Computed Ref"];
 
-exampleList = sortExamples(orderedList, exampleList);
+export { ReactivityButtonExamples, ReactivityRouterList };
 
-export const ReactivityRouterList = fileNames.map((filename) =>
-  createRouterObj(filename, modules, path),
-);
-
-export const ReactivityButtonExamples = {
-  name: "Reactivity",
-  examples: exampleList,
-  link: "https://vuejs.org/guide/essentials/reactivity-fundamentals.html",
-};
