@@ -1,23 +1,5 @@
-import { createExample, createRouterObj, sortExamples } from "@/util.js";
+import { generateButtonExamplesAndRouterList } from "@/factoryUtil.js";
 
-const path = "/src/views/introduction/";
-
-const modules = import.meta.glob("/src/views/introduction/*.vue", {
-  eager: true,
-  query: "?raw",
-  import: "default",
-});
-
-// Extract the file name without the directory and extension
-const fileNames = Object.keys(modules).map((key) =>
-  key.replace(path, "").replace(".vue", ""),
-);
-
-let exampleList = fileNames.map((filename) => createExample(filename));
-
-let IntroductionRouterList = fileNames.map((filename) =>
-  createRouterObj(filename, modules, path),
-);
 
 const orderedList = [
   "Hello World",
@@ -28,14 +10,33 @@ const orderedList = [
   "Numeric Input",
 ];
 
-// write a util method given to sort exampleList based on orderedList
+const path = "/src/views/introduction/";
+const sectionName = "Introduction";
+const link = "https://vuejs.org/guide/essentials/template-syntax.html";
 
-exampleList = sortExamples(orderedList, exampleList);
+const singleFileComponents = import.meta.glob("/src/views/introduction/*.vue", {
+  eager: true,
+  query: "?raw",
+  import: "default",
+});
 
-export const IntroductionButtonExamples = {
-  name: "Introduction",
-  examples: exampleList,
-  link: "https://vuejs.org/guide/essentials/template-syntax.html",
-};
+const folderComponents = import.meta.glob("/src/views/introduction/*/*.vue", {
+  eager: true,
+  query: "?raw",
+  import: "default",
+});
 
-export { IntroductionRouterList };
+const { ButtonExamples: IntroductionButtonExamples, RouterList: IntroductionRouterList } =
+  generateButtonExamplesAndRouterList(
+    path,
+    singleFileComponents,
+    folderComponents,
+    sectionName,
+    link,
+    orderedList,
+  );
+
+
+console.log(IntroductionButtonExamples, IntroductionRouterList);
+export { IntroductionButtonExamples, IntroductionRouterList };
+

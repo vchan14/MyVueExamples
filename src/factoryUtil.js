@@ -25,14 +25,12 @@ export function generateButtonExamplesAndRouterList(
   orderedList = [],
 ) {
   // Generate examples and router objects for single file components
-  let exampleList = Object.keys(singleFileComponents).map((key) => {
-    const filename = key.replace(basePath, "").replace(".vue", "");
-    return createExample(filename);
-  });
+  const filenames = Object.keys(singleFileComponents).map((key) => { return key.replace(basePath, "").replace(".vue", ""); });
 
-  let routerList = exampleList.map(({ name }) =>
-    createRouterObj(name, singleFileComponents, basePath),
-  );
+  let exampleList = filenames.map((filename) => createExample(filename));
+
+
+  let routerList = filenames.map(filename => createRouterObj(filename, singleFileComponents, basePath));
 
   // Extract folder names and generate examples for them
   const folderNames = extractUniqueFolderNames(folderComponents);

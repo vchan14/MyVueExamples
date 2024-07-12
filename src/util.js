@@ -6,7 +6,7 @@ export const pascalCaseToWords = (pascalCaseString) => {
 
 export const createExample = (fileName) => {
   return {
-    name: fileName,
+    name: pascalCaseToWords(fileName),
     path: `/${fileName}`,
   };
 };
