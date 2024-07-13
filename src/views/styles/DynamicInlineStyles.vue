@@ -1,8 +1,10 @@
 <template>
   <div>
-    <!-- Bind the style object dynamically with :style -->
-    <!-- note: camelCase-cased keys are recommended over kebab-cased e.g: fontSize, paddingLeft, backgroundColor -->
-    <!-- when kebab-cased keys are used, they must be quoted e.g: 'background-color' -->
+    <!--
+      Bind the style object dynamically with :style note: camelCase-cased keys are recommended over kebab-cased
+      e.g: fontSize, paddingLeft, backgroundColor when kebab-cased keys are used, they must be quoted
+      e.g: 'background-color'
+     -->
     <p
       :style="{
         color: activeColor,

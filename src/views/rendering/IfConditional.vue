@@ -7,9 +7,7 @@
 
 <script setup>
 import { ref } from "vue";
-
 const user = ref({ loggedIn: false });
-
 const toggle = () => {
   user.value.loggedIn = !user.value.loggedIn;
 };

@@ -15,4 +15,3 @@ p {
   text-decoration-color: lightblue;
 }
 </style>
-<!--https://vuejs.org/api/sfc-css-features.html#scoped-css-->

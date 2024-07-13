@@ -1,6 +1,8 @@
 <template>
   <div>
-    <!--We can pass an object to :class (short for v-bind:class) to dynamically toggle classes-->
+    <!--
+    We can pass an object to :class (short for v-bind:class) to dynamically toggle classes
+    -->
     <p :class="{ activeClass: isActive, inactiveClass: !isActive }">
       This paragraph's class changes dynamically.
     </p>

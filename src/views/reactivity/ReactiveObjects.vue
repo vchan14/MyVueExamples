@@ -22,4 +22,3 @@ const incrementNestedCount = () => {
   state.nested.count++;
 };
 </script>
-https://vuejs.org/guide/essentials/reactivity-fundamentals.html#reactive

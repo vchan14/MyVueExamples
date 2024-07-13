@@ -1,4 +1,5 @@
 <template>
+  <!-- Checkbox input bound to 'isChecked' to toggle email spam preference -->
   <label>
     <input type="checkbox" v-model="isChecked" />
     Yes! Send me regular email spam

@@ -14,4 +14,3 @@ const handleClick = () => {
   count.value++; // .value is required to get/set the value inside <script> tag
 };
 </script>
-https://vuejs.org/guide/essentials/reactivity-fundamentals.html#ref
