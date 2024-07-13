@@ -33,7 +33,6 @@ watch(
             <img class="inline w-4" :src="questionIcon" alt="Question" />
           </a>
         </p>
-
         <RouterButton
           v-for="example in examples"
           :key="example.name"
@@ -42,6 +41,7 @@ watch(
         />
       </div>
       <RouterButton to-path="/test" name="test me" />
+      <p class="text-neutral-600 text-center dark:text-neutral-400 text-sm">Made by vchan14©</p>
     </div>
     <div class="h-full w-full rounded border-2 border-gray-400">
       <RouterView />
