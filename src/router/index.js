@@ -4,7 +4,7 @@ import { IntroductionRouterList } from "@/factory/IntroductionFactory.js";
 import { StyleRouterList } from "@/factory/StylesFactory.js";
 import { RenderingRouterList } from "@/factory/RenderingFactory.js";
 import TestView from "@/views/TestView.vue";
-import { othersRouterList } from "@/factory/OthersFactory.js";
+// import { othersRouterList } from "@/factory/OthersFactory.js";
 import { PropsRouterList } from "@/factory/PropsFactory.js";
 import {EventHandlingRouterList} from "@/factory/EventHandlingFactory.js";
 
@@ -27,7 +27,7 @@ const router = createRouter({
     ...RenderingRouterList,
     ...EventHandlingRouterList,
     ...PropsRouterList,
-    ...othersRouterList,
+    // ...othersRouterList,
   ],
 });
 

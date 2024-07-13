@@ -1,4 +1,3 @@
-<!--https://vuejs.org/guide/components/events.html#event-arguments-->
 <template>
   <InnerView @message="handleMessage" />
 </template>

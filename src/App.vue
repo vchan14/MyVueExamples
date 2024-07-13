@@ -40,8 +40,8 @@ watch(
           :name="example.name"
         />
       </div>
-      <RouterButton to-path="/test" name="test me" />
-      <p class="text-neutral-600 text-center dark:text-neutral-400 text-sm">Made by vchan14©</p>
+<!--      <RouterButton to-path="/test" name="test me" />-->
+      <p class="text-blue-300 font-bold text-center dark:text-neutral-400 text-sm">Made by vchan14©</p>
     </div>
     <div class="h-full w-full rounded border-2 border-gray-400">
       <RouterView />
