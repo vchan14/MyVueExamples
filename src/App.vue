@@ -5,6 +5,7 @@ import { ALL_EXAMPLES } from "@/exampleButtons.js";
 import { watch } from "vue";
 import { useTitle } from "@vueuse/core";
 import questionIcon from "@/assets/question.svg";
+import githubIcon from "@/assets/github.svg";
 
 const route = useRoute();
 const title = useTitle();
@@ -41,7 +42,13 @@ watch(
         />
       </div>
 <!--      <RouterButton to-path="/test" name="test me" />-->
-      <p class="text-blue-300 font-bold text-center dark:text-neutral-400 text-sm">Made by vchan14©</p>
+
+      <p class="text-gray-800 font-bold text-center dark:text-neutral-400 text-sm">
+        <a href="https://github.com/vchan14/MyVueExamples" target="_blank">
+          <img class="inline w-4" :src="githubIcon" alt="github icon" />
+        </a>
+        Made by vchan14©
+      </p>
     </div>
     <div class="h-full w-full rounded border-2 border-gray-400">
       <RouterView />
