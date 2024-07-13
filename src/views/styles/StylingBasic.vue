@@ -1,13 +1,6 @@
 <template>
   <div class="style-me">Styled with selector!</div>
-  <div
-    style="
-      color: red;
-      font-family: &quot;Helvetica&quot;, &quot;Arial&quot;, sans-serif;
-    "
-  >
-    Inline Styled
-  </div>
+  <div style="color: red; font-size: 3em">Inline Styled</div>
 </template>
 
 <style>
