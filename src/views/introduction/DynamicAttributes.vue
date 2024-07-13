@@ -6,10 +6,10 @@
 </template>
 
 <script setup>
-const rickGif = "https://media.tenor.com/xo0jvr4bbTMAAAAi/rick-astley-rickroll.gif";
+const rickGif = "https://tinyurl.com/3b525smu";
 const rickAlt = "Rick Astley";
 
-const catGif = "https://media.glamour.com/photos/580e1dc07a52574c7ef91071/master/w_2580%2Cc_limit/giphy%2520(1).gif";
+const catGif = "https://tinyurl.com/ydjtf3y3";
 const catAlt = "cat";
 </script>
 
