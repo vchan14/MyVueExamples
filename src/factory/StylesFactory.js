@@ -6,9 +6,7 @@ const orderedList = [
   "Scoped Styles",
 ];
 
-
 import { generateButtonExamplesAndRouterList } from "@/factoryUtil.js";
-
 
 const path = "/src/views/styles/";
 const sectionName = "Styles";
@@ -36,7 +34,4 @@ const { ButtonExamples: StyleButtonExamples, RouterList: StyleRouterList } =
     orderedList,
   );
 
-
 export { StyleButtonExamples, StyleRouterList };
-
-

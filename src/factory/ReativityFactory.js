@@ -2,7 +2,6 @@ const orderedList = ["Reactive Primitives", "Reactive Objects", "Computed Ref"];
 
 import { generateButtonExamplesAndRouterList } from "@/factoryUtil.js";
 
-
 const path = "/src/views/reactivity/";
 const sectionName = "Reactivity";
 const link = "https://vuejs.org/guide/essentials/reactivity-fundamentals.html";
@@ -19,16 +18,16 @@ const folderComponents = import.meta.glob("/src/views/reactivity/*/*.vue", {
   import: "default",
 });
 
-const { ButtonExamples: ReactivityButtonExamples, RouterList: ReactivityRouterList } =
-  generateButtonExamplesAndRouterList(
-    path,
-    singleFileComponents,
-    folderComponents,
-    sectionName,
-    link,
-    orderedList,
-  );
-
+const {
+  ButtonExamples: ReactivityButtonExamples,
+  RouterList: ReactivityRouterList,
+} = generateButtonExamplesAndRouterList(
+  path,
+  singleFileComponents,
+  folderComponents,
+  sectionName,
+  link,
+  orderedList,
+);
 
 export { ReactivityButtonExamples, ReactivityRouterList };
-

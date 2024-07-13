@@ -1,9 +1,6 @@
-const orderedList = [
-];
-
+const orderedList = [];
 
 import { generateButtonExamplesAndRouterList } from "@/factoryUtil.js";
-
 
 const path = "/src/views/styles/";
 const sectionName = "Others";
@@ -31,8 +28,4 @@ const { ButtonExamples: OthersButtonExamples, RouterList: othersRouterList } =
     orderedList,
   );
 
-
 export { OthersButtonExamples, othersRouterList };
-
-
-

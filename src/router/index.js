@@ -6,7 +6,7 @@ import { RenderingRouterList } from "@/factory/RenderingFactory.js";
 import TestView from "@/views/TestView.vue";
 // import { othersRouterList } from "@/factory/OthersFactory.js";
 import { PropsRouterList } from "@/factory/PropsFactory.js";
-import {EventHandlingRouterList} from "@/factory/EventHandlingFactory.js";
+import { EventHandlingRouterList } from "@/factory/EventHandlingFactory.js";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),

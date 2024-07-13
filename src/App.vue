@@ -41,9 +41,11 @@ watch(
           :name="example.name"
         />
       </div>
-<!--      <RouterButton to-path="/test" name="test me" />-->
+      <!--      <RouterButton to-path="/test" name="test me" />-->
 
-      <p class="text-gray-800 font-bold text-center dark:text-neutral-400 text-sm">
+      <p
+        class="text-center text-sm font-bold text-gray-800 dark:text-neutral-400"
+      >
         <a href="https://github.com/vchan14/MyVueExamples" target="_blank">
           <img class="inline w-4" :src="githubIcon" alt="github icon" />
         </a>

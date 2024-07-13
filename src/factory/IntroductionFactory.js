@@ -1,6 +1,5 @@
 import { generateButtonExamplesAndRouterList } from "@/factoryUtil.js";
 
-
 const orderedList = [
   "Hello World",
   "Raw Html",
@@ -26,17 +25,17 @@ const folderComponents = import.meta.glob("/src/views/introduction/*/*.vue", {
   import: "default",
 });
 
-const { ButtonExamples: IntroductionButtonExamples, RouterList: IntroductionRouterList } =
-  generateButtonExamplesAndRouterList(
-    path,
-    singleFileComponents,
-    folderComponents,
-    sectionName,
-    link,
-    orderedList,
-  );
-
+const {
+  ButtonExamples: IntroductionButtonExamples,
+  RouterList: IntroductionRouterList,
+} = generateButtonExamplesAndRouterList(
+  path,
+  singleFileComponents,
+  folderComponents,
+  sectionName,
+  link,
+  orderedList,
+);
 
 console.log(IntroductionButtonExamples, IntroductionRouterList);
 export { IntroductionButtonExamples, IntroductionRouterList };
-
