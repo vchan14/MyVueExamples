@@ -1,5 +1,5 @@
 <template>
-  <!-- v-bind keeps src attribute in sync with catGif-->
+  <!-- v-bind keeps src attribute in sync with rickGif-->
   <img v-bind:src="rickGif" v-bind:alt="`${rickAlt} dancing`" />
   <!-- shorthand for v-bind -->
   <img :src="catGif" :alt="`${catAlt} playing`" />
