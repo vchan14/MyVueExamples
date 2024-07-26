@@ -5,10 +5,11 @@
 
 <script setup>
 // Declares 'answer' prop with type String and a default value of "a mystery"
-defineProps({
+const props = defineProps({
   answer: {
     type: String,
     default: "a mystery",
   },
 });
+console.log('here is your answer:', props.answer);
 </script>
