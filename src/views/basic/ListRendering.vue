@@ -1,28 +1,11 @@
 <template>
-  <div>
-    <ul>
-      <li v-for="todo in todosArr" :key="todo.id">
-        {{ todo.todo }}
-      </li>
-    </ul>
-  </div>
+  <ul>
+    <!-- Use v-for to render each item in the items array -->
+    <li v-for="(item, index) in items" :key="index">{{ item }}</li>
+  </ul>
 </template>
 
 <script setup>
-import { ref } from "vue";
-
-const todosArr = ref([
-  {
-    id: 1,
-    todo: "Walk the dog",
-  },
-  {
-    id: 2,
-    todo: "Water the plants",
-  },
-  {
-    id: 3,
-    todo: "Wash the dishes",
-  },
-]);
+// Define a reactive array of items
+const items = ["Apple", "Banana", "Cherry"];
 </script>
