@@ -1,6 +1,4 @@
-const orderedList = [
-
-];
+const orderedList = [];
 
 import { generateButtonExamplesAndRouterList } from "@/factoryUtil.js";
 

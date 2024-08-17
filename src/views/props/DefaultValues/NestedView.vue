@@ -11,5 +11,5 @@ const props = defineProps({
     default: "a mystery",
   },
 });
-console.log('here is your answer:', props.answer);
+console.log("here is your answer:", props.answer);
 </script>

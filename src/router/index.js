@@ -7,7 +7,7 @@ import TestView from "@/views/TestView.vue";
 // import { othersRouterList } from "@/factory/OthersFactory.js";
 import { PropsRouterList } from "@/factory/PropsFactory.js";
 import { EventHandlingRouterList } from "@/factory/EventHandlingFactory.js";
-import {BasicRouterList} from "@/factory/BasicHandlingFactory.js";
+import { BasicRouterList } from "@/factory/BasicHandlingFactory.js";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
